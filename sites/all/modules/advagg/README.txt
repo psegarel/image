@@ -3,14 +3,18 @@
 ADVANCED CSS/JS AGGREGATION MODULE
 ----------------------------------
 
+
 CONTENTS OF THIS FILE
 ---------------------
 
  * Fast 404
  * Features & benefits
  * Configuration
+ * Notes
+ * JavaScript Bookmarklet
  * Technical Details & Hooks
  * Single htaccess rules
+ * nginx Configuration
 
 
 FAST 404
@@ -178,6 +182,45 @@ admin/settings/advagg/info
    drupal_http_request() which is helpful when debugging async issues.
 
 
+NOTES
+-----
+
+--Bundler Sub Module--
+When using the bundler sub module, tools like Google Page Speed and YSlow will
+complain that not all CSS/JS files are in one aggregate. This has to do with
+how drupal_add_js/drupal_add_css works. You can get a better score on these
+tools by placing all files into one aggregate, but the issue with doing that
+is, different pages load different css/js files, thus on page 2 of the users
+visit, you will get worse performance because the browser has to re-download a
+whole new css & js aggregate rather then the smaller aggregate that only
+changed. The bundler attempts to work around this issue by creating various
+bundles, each one being chosen fairly smartly so that instead of downloading a
+200KB js file you only have to download a 20KB file on the 2nd page.
+
+The bundler sub module is all about balancing trade offs. You can make a site
+that had really good performance stats according to the tools but you would
+then have to re-download just about everything on a different page of your
+site, because not all your pages are the same. If you don't care about this and
+want a good score from pagespeed, disable the bundler sub-module. That will
+give you a better score, but then you have to download a new (large) aggregate
+on different parts of your website and already downloaded file reuse will be
+lower.
+
+--Cron--
+The cron job for AdvAgg is there as a garbage collector. It only needs to run
+once a week; running it every hour isn't going to be bad, it isn't necessary
+though.
+
+
+JAVASCRIPT BOOKMARKLET
+----------------------
+
+You can use this JS code as a bookmarklet for toggling the AdvAgg URL parameter.
+See http://en.wikipedia.org/wiki/Bookmarklet for more details.
+
+    javascript:(function(){var loc = document.location.href,qs = document.location.search,regex_off = /\&?advagg=-1/,goto = loc;if(qs.match(regex_off)) {goto = loc.replace(regex_off, '');} else {qs = qs ? qs + '&advagg=-1' : '?advagg=-1';goto = document.location.pathname + qs;}window.location = goto;})();
+
+
 TECHNICAL DETAILS & HOOKS
 -------------------------
 
@@ -235,6 +278,7 @@ Public Functions:
  * advagg_add_css_inline. Adds the ability to add in inline CSS to the page with
    a prefix and suffix being set as well.
 
+
 SINGLE HTACCESS RULES
 ---------------------
 
@@ -269,25 +313,39 @@ You also need to place these rules at the very end of your htaccess file, after
 "</IfModule>".
 
 
+# AdvAgg Rules Start.
 <FilesMatch "^(j|cs)s_[0-9a-f]{32}_.+\.(j|cs)s(\.gz)?">
-  <IfModule mod_expires.c>
-    # Enable expirations.
-    ExpiresActive On
+  # No mod_headers
+  <IfModule !mod_headers.c>
+    # No mod_expires
+    <IfModule !mod_expires.c>
+      # Use ETags.
+      FileETag MTime Size
+    </IfModule>
 
-    # Cache all aggregated CSS/JS files for 1 year after access (A).
-    ExpiresDefault A31556926
+    # Use Expires Directive.
+    <IfModule mod_expires.c>
+      # Do not use ETags.
+      FileETag None
+      # Enable expirations.
+      ExpiresActive On
+      # Cache all aggregated CSS/JS files for 480 weeks after access (A).
+      ExpiresDefault A290304000
+    </IfModule>
   </IfModule>
+
   <IfModule mod_headers.c>
-    # Unset unnecessary headers.
-    Header unset Last-Modified
-    Header unset Pragma
-    Header unset Accept-Ranges
-
-    # Make these files publicly cacheable.
-    Header append Cache-Control "public"
+    # Set a far future Cache-Control header to 480 weeks.
+    Header set Cache-Control "max-age=290304000, no-transform, public"
+    # Set a far future Expires header.
+    Header set Expires "Tue, 20 Jan 2037 04:20:42 GMT"
+    # Pretend the file was last modified a long time ago in the past.
+    Header set Last-Modified "Wed, 20 Jan 1988 04:20:42 GMT"
+    # Do not use etags for cache validation.
+    Header unset ETag
   </IfModule>
-  FileETag MTime Size
 </FilesMatch>
+# AdvAgg Rules End.
 
 
 Be sure to disable the "Generate .htaccess files in the advagg_* dirs" setting
@@ -295,17 +353,20 @@ on the admin/settings/advagg page after placing these rules in the webroots
 htaccess file. This is located at the same directory level as Drupal's
 index.php.
 
+
 NGINX CONFIGURATION
 -------------------
+
 http://drupal.org/node/1116618
 
     ###
     ### advagg_css and advagg_js support
     ###
-    location ~* advagg_(?:css|js)/ {
-        access_log off;
-        expires 365d;
-        add_header Pragma "";
-        add_header Cache-Control "public";
-        try_files $uri @drupal;
+    location ~* files/advagg_(?:css|js)/ {
+      access_log off;
+      expires    max;
+      add_header ETag "";
+      add_header Cache-Control "max-age=290304000, no-transform, public";
+      add_header Last-Modified "Wed, 20 Jan 1988 04:20:42 GMT";
+      try_files  $uri @drupal;
     }

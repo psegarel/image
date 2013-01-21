@@ -88,14 +88,14 @@ function advagg_missing_regenerate() {
     $file_type_path = $css_path;
   }
   $new_filename = advagg_build_filename($type, $md5, $counter);
-  $filepath = $file_type_path .'/'. $new_filename;
+  $filepath = $file_type_path . '/' . $new_filename;
 
   // Only process if we got an older counter.
   // If we have an out of range counter see if a simlar file exists and serve
   // that up.
   if ($counter > $counter_in_db || $counter < 0) {
     $new_filename = advagg_build_filename($type, $md5, $counter_in_db);
-    $filepath = $file_type_path .'/'. $new_filename;
+    $filepath = $file_type_path . '/' . $new_filename;
     advagg_missing_send_file($filepath, advagg_build_uri($filepath), $type);
     exit;
   }
@@ -136,12 +136,40 @@ function advagg_missing_send_file($filepath, $uri, $type) {
       if ($key = array_search(-1, $headers)) {
         unset($headers[$key]);
       }
+
+      // Remove all previously set Cache-Control headers, because we're going to
+      // override it. Since multiple Cache-Control headers might have been set,
+      // simply setting a new, overriding header isn't enough: that would only
+      // override the *last* Cache-Control header. Yay for PHP!
+      foreach ($headers as $key => $header) {
+        if (strpos($header, 'Cache-Control:') === 0) {
+          unset($headers[$key]);
+        }
+        elseif (strpos($header, 'ETag:') === 0) {
+          unset($headers[$key]);
+        }
+      }
+      if (function_exists('header_remove')) {
+        header_remove('Cache-Control');
+        header_remove('ETag');
+      }
+      else {
+        drupal_set_header("Cache-Control:");
+        drupal_set_header("Cache-Control:");
+        drupal_set_header("ETag:");
+        drupal_set_header("ETag:");
+      }
+      // Set a far future Cache-Control header (480 weeks), which prevents
+      // intermediate caches from transforming the data and allows any
+      // intermediate cache to cache it, since it's marked as a public resource.
+      $headers[] = "Cache-Control: max-age=290304000, no-transform, public";
+
       if (count($headers)) {
-        file_transfer($filepath, $headers);
+        advagg_missing_file_transfer($filepath, $headers);
       }
     }
 
-    // file_transfer didn't run, redirect via header.
+    // advagg_missing_file_transfer didn't run/send data, redirect via header.
     header('Location: ' . $uri, TRUE, 307);
     usleep(250000); // Sleep for 250ms
   }
@@ -173,7 +201,7 @@ function advagg_missing_remove_cache($bundle_md5) {
   if (!empty($filenames)) {
     foreach ($filenames as $key => $info) {
       $filename = $info['filename'];
-      $filepath = $file_type_path .'/'. $filename;
+      $filepath = $file_type_path . '/' . $filename;
 
       cache_set($filepath, FALSE, 'cache_advagg', TRUE);
     }
@@ -200,7 +228,7 @@ function advagg_missing_async_opp($output, $wait = TRUE, $content_type = "text/h
   // Calculate Content Length
   if ($length == 0) {
     $output .= "\n";
-    $length = (advagg_missing_strlen($output)-1);
+    $length = (advagg_missing_strlen($output) -1);
   }
   // Prime php for background operations
   $loop = 0;
@@ -245,4 +273,79 @@ function advagg_missing_strlen($string) {
   else {
     return strlen($string);
   }
+}
+
+/**
+ * Transfer file using http to client. Pipes a file through Drupal to the
+ * client.
+ *
+ * @param $source File to transfer.
+ * @param $headers An array of http headers to send along with file.
+ */
+function advagg_missing_file_transfer($source, $headers) {
+  $source = advagg_missing_file_create_path($source);
+  $fd = fopen($source, 'rb');
+  // Return if we can't open the file. Will try a 307 in browser to send file.
+  if (!$fd) {
+    return;
+  }
+
+  // Clear the buffer.
+  if (ob_get_level()) {
+    ob_end_clean();
+  }
+
+  // Add in headers.
+  foreach ($headers as $header) {
+    // To prevent HTTP header injection, we delete new lines that are
+    // not followed by a space or a tab.
+    // See http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2
+    $header = preg_replace('/\r?\n(?!\t| )/', '', $header);
+    drupal_set_header($header);
+  }
+
+  // Transfer file in 8096 byte chunks.
+  while (!feof($fd)) {
+    print fread($fd, 8096);
+  }
+  fclose($fd);
+  exit();
+}
+
+/**
+ * Make sure the destination is a complete path and resides in the file system
+ * directory, if it is not prepend the file system directory.
+ *
+ * @param $dest A string containing the path to verify. If this value is
+ *   omitted, Drupal's 'files' directory will be used.
+ * @return A string containing the path to file, with file system directory
+ *   appended if necessary, or FALSE if the path is invalid (i.e. outside the
+ *   configured 'files' or temp directories).
+ */
+function advagg_missing_file_create_path($dest = 0) {
+  list($css_path, $js_path) = advagg_get_root_files_dir();
+
+  $valid_paths = array();
+  $valid_paths[] = file_directory_path();
+  $valid_paths[] = $css_path;
+  $valid_paths[] = $js_path;
+  foreach ($valid_paths as $file_path) {
+    if (!$dest) {
+      return $file_path;
+    }
+    // file_check_location() checks whether the destination is inside the Drupal files directory.
+    if (file_check_location($dest, $file_path)) {
+      return $dest;
+    }
+    // check if the destination is instead inside the Drupal temporary files directory.
+    elseif (file_check_location($dest, file_directory_temp())) {
+      return $dest;
+    }
+    // Not found, try again with prefixed directory path.
+    elseif (file_check_location($file_path . '/' . $dest, $file_path)) {
+      return $file_path . '/' . $dest;
+    }
+  }
+  // File not found.
+  return FALSE;
 }
