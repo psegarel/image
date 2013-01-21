@@ -1,0 +1,672 @@
+/* $Id: local-sample.css,v 1.2 2010/09/17 21:36:06 eternalistic Exp $ */
+
+/****************************/
+/* LOCAL CSS                */
+/****************************/
+
+/* Put your custom CSS and CSS overrides in this file and  */
+/* rename it local.css.  By restricting your CSS changes   */
+/* to local.css, your changes will not be overwritten when */
+/* upgrading to a new version of this theme.  You can also */
+/* use a local-rtl.css file for the equivalent in RTL.     */
+
+/* Steps to activate local.css:                       */
+/* 1. Add your custom CSS to this file                */
+/* 2. Rename this file to local.css                   */
+/* 3. Clear cached data at admin/settings/performance */
+
+
+
+/* ================================ Colors ================================ */
+
+body , .preface-top-wrapper 													{	background: #fff;
+																				}
+
+html, .header-top-wrapper , .header-group-wrapper , .footer-wrapper,
+.footer-message-wrapper 					 									{	background: #0669e4;
+																				}
+																																							
+.postscript-bottom-wrapper 														{	background: #fff;
+  																					color: #b0b0b0;
+																				}																																						
+.homepage-sidebar-right															{	background: #fff;
+																				}
+
+a:link, a:visited 																{	color: #0669e4;
+																				}
+
+h1, h2, h4, h5, h6	 															{	color: #535353;
+																				}
+
+h2.block-title	 																{ 	border-top: 1px solid #ccc;
+																				}
+																																				
+h3																				{	color: #b4ff19;
+																				}
+																				
+h3.news-title																	{	color: #444;
+																					/* border-top: 1px dotted #444; */
+																				}
+
+.latest-news																	{	background: #fff;
+																				}
+
+.latest-news table tbody tr td													{	/* background: #eee; */
+																					/* border-right: 10px solid #fff; */
+																					/* padding: 1em 0 0 2em; */
+																				}
+
+.latest-news table tbody tr td.col-3											{	/* border-right: none; */
+																				}
+
+.latest-news h3.news-title														{	background: none;
+																					/* border-bottom: 1px dotted #444; */
+																					font-size: 1.2em;
+																				}
+																					
+.more												 							{	color: #0669e4;
+																				}																			
+																																						
+.news-page-title																{	/* color: #444; */
+																				}	
+																				
+.views-field-title a:hover														{	color: #444;
+																				}	
+																				
+.news-sidebar-right a															{	color: #444;
+																				}																																
+.featured																		{	color: #444;
+																				}
+
+.news-teaser																	{	color: #0669e4;
+																				}
+
+.featured-information															{	color: #777;
+																				}
+																																						
+.supplier																		{	color: #444;
+																				}
+																																						
+.supplier a																		{	color: #3b2133;
+																				}
+
+																																						
+.supplier-sidebar-left a														{	color: #444;
+																				}
+
+.supplier-title																	{	color: #0669e4;
+																				}																			
+																																						
+.supplier h2.block-title														{	border-top: 1px dotted #3b2133;
+																				}
+.supplier-logo																	{	background: #fff;
+																					border: 1px solid #888;
+																				}	
+.header-primary-menu-wrapper 													{	background: #04080b;
+																				}
+
+.main-wrapper																	{	border-bottom: 6px solid #04080b;
+																				}
+
+
+.development-log h3																{	color: #444;
+																				}
+																					
+.header-image																	{	clear: both;
+																					margin-bottom: -.6em;
+																				}	
+
+.featured-wine-illustration	img													{	border: 1px solid #ccc;;
+																				}																			
+.imagecache-240x120 img															{	padding: .1em;
+																					border: 1px solid #ccc;
+																				}
+/*		
+-------------------------------------------------------------- */
+
+
+
+
+/* Basic Typography & Colors
+-------------------------------------------------------------- */
+																					
+.more												 							{	text-transform: uppercase;
+																					font-size: .8em;
+																					padding: .2em .2em .2em .2em;
+																					background: #444;
+																					color: #fff;
+																					width: 60px;
+																					display: block;
+																					text-align: center;
+																					border: 2px solid #ccc;
+																				}
+
+																				
+																				
+.header-group-inner 															{	padding: 0;
+																					margin: 0;
+																				}
+
+.header-primary-menu-wrapper 													{	border-bottom: none;
+																				}
+
+.main-inner																		{	/* background: url("/sites/default/files/images/flower_bg.jpg"); */
+																					/* background-repeat: no-repeat; */
+																					background: none;
+																				}
+.news-page-title,
+h1.title	 																	{ 	font-size: 1.8em;
+																					font-weight: bold;
+																					padding-top: 1em;
+																					color: #0669e4;
+																				}
+
+#pid-关于我们 h1.title,
+#pid-about-us h1.title,
+#pid-downloads h1.title,
+#pid-contact h1.title,
+#pid-products-olive-oil h1.title,
+#pid-products-wine h1.title,
+#pid-home h1.title	 															{ 	display: none;
+																				}	
+																				
+h2.block-title	 																{ 	font-size: 1.2em;
+																					font-weight: bold;
+																					padding-top: 1em;
+																				}	
+
+.news-sidebar-right h2.block-title	 											{ 	border-top: none;
+																				}
+																				
+.footer-wrapper 																{	border-top: none;
+																				}																		
+																				
+
+h3																				{	font-weight: bold;
+																					font-size: 2em;
+																					padding: .2em;
+																					border-radius: 15px;
+																					margin-right: .4em;
+																				}
+																				
+h3.news-title																	{	font-size: 1.3em;
+																					margin: 0 0 0.4em 0;
+																					padding: 1em 3em 0 0;
+																					border-radius: 0;
+																				}
+																				
+.views-field-title a:hover														{	text-decoration: none;
+																				}						
+
+.views-view-grid tbody tr td													{	vertical-align: top;
+																					width: 30%;
+																				}																																										
+.views-view-grid tbody tr td p													{	padding-right: 2em;
+																				}																																										
+.all-olive-oils .views-view-grid tbody tr td img,
+.all-wines .views-view-grid tbody tr td img										{	float: left;
+																					margin-right: 1em;
+																					margin-bottom: 4em;
+																				}																																										
+#pid-news .views-field-field-gallery-image-fid img,
+#views_slideshow_singleframe_main_News-block_3									{	float: left;
+																					margin: .5em 2em 1em 0;
+																				}																																									
+.news-item p																	{	margin: 0 2em 1em 0;
+																				}
+
+.latest-news																	{	padding: 1em;
+																				}
+
+.featured-wine-illustration														{	margin: 0 0 1em 1em;
+																				}
+
+.latest-news .field-content p													{	width: 240px;
+																				}
+
+.latest-news h3.news-title														{	padding: .4em;
+																					border-top: none;
+																				}
+																																						
+.news-page-title																{	/*
+font-size: 2.4em;
+																					font-weight: bold;
+																					margin: 0 0 1em 0;
+																					padding: 1em 3em 0 0;
+																					border-bottom:none;
+																					border-radius: 0;
+																					line-height: 100%;
+*/
+																				}
+
+.news-teaser , .featured-information											{	font-family:"Goergia,Trebuchet";
+																					font-size: 1.6em;
+																					line-height: 120%;
+																					font-style: italic;
+																				}
+
+.featured-information															{	padding: 10px 0 10px 0;
+																					font-size: 1.4em;
+																				}		
+																				
+.news-sidebar-right a															{	text-decoration: underline;
+																				}
+
+.development-log h3																{	font-size: 1.4em;
+																					padding: 0;
+																					margin: 0;
+																				}
+
+#pid-downloads	#main-wrapper													{	padding: 6em 0 0 0;
+																				}
+
+#pid-downloads .views-field-title												{	font-weight: bold;
+																				}
+
+#pid-downloads table thead 														{	display: none;
+																				}
+
+#pid-downloads table,
+#pid-downloads tbody tr td,
+#pid-downloads tbody tr ,
+#pid-downloads table thead 														{	border: none;
+																					border-bottom: none;
+																				}
+
+#pid-downloads tbody tr															{	vertical-align: top;
+																				}
+
+#pid-downloads tbody tr td														{	border-bottom: 10px solid transparent;
+																				}
+/* Layout 
+-------------------------------------------------------------- */
+.header-group-inner 															{	padding: 0;
+																					/* margin-bottom: -.5em; */
+																				}																																				
+.attachment-before																{	margin-top: 2em;
+																				}
+																				
+.view-Featured-Content .views-field-field-inline-image-fid						{	float: left;
+																					padding: 0 20px 10px 0;
+																				}
+
+/* Home 
+-------------------------------------------------------------- */																																				
+.featured																		{	font-weight: bold;
+																				}																		
+																				
+#featured-wine																	{	margin-top: 2em;
+																				}																		
+																				
+.featured-wine img																{	float: left;
+																					margin-right: 2em;
+																				}						
+/* Country 
+-------------------------------------------------------------- */
+																																						
+.supplier																		{	margin-top: 2em;
+																				}
+																																						
+.supplier a																		{	text-decoration: underline;
+																				}
+																																						
+.supplier h2.block-title														{	font-size: 1.2em;
+																					font-weight: bold;
+																					padding-top: 1em;
+																				}
+																																						
+.supplier-sidebar-left a														{	font-weight: bold;
+																					font-size: 1.2em;
+																					padding: 1em 4em .4em 0;
+																					border-radius: 5px;
+																					width: 50%;
+																					/* text-align: center; */
+																					margin-top: 2em;
+																					margin-bottom: 1em;
+																				}
+
+.supplier-title																	{	font-weight: bold;
+																					font-size: 2em;
+																					text-align: left;
+																					margin-top: 1em;
+																				}																			
+.supplier-logo																	{	display: block;
+																					padding: 1em;
+																					margin-bottom: 1em;
+																				}																																										
+/* Country 
+-------------------------------------------------------------- */
+div.panels-ipe-display-container .panel-pane .pane-title 						{	padding: 1em 0 0 0;
+																				}																			
+.country-title																	{	font-weight: bold;
+																					font-size: 1.4em;
+																					color: #3b2133;
+																					padding: 0;
+																					text-align: left;
+																					text-transform: uppercase;
+																					text-align: center;
+																				}
+																				
+.country-sidebar-right h2.block-title ,
+.country-sidebar-left h2.block-title 											{	font-weight: bold;
+																					font-size: 1.2em;
+																					color: #0669e4;
+																					/* border-top: 5px solid #0669e4; */
+																					padding: .4em 0 0 0;
+																					margin-top: 1em;
+																					text-align: left;
+																				}
+
+.country-sidebar-left h2.block-title 											{	border-top: none;
+																					border-bottom: 1px solid #0669e4;
+																					padding-bottom: .4em;
+																				}
+
+.country-sidebar-left img														{	padding: 0;
+																					/* border-bottom: 8px solid #3b2133; */
+																				}
+
+.country-sidebar-right img														{	padding: 0 .3em 0 .3em;
+																					border: 1px dotted #ccc;
+																					/* margin-left: 2em; */
+																				}
+																				
+.country-name																	{	font-weight: bold;
+																					font-size: 1.2em;
+																					background: #888888;
+																					padding: 1em;
+																					border-radius: 5px;
+																					width: 50%;
+																					text-align: center;
+																					margin-bottom: 2em;
+																				}	
+																				
+.country-header																	{	font-weight: bold;
+																					font-size: 1.2em;
+																					margin: 0;
+																					padding: 0;
+																				}
+																				
+.country-name	a																{	color: #fff;
+																				}		
+
+.country a																		{	/* margin-left: 2em; */
+																					color: #3b2133;
+																					text-decoration: underline;
+																				}		
+
+.country ul li																	{	list-style-type: none;
+																				}																			
+.view-Countries	h3																{	font-size: 1.2em;
+																				}																			
+.view-Countries	ul																{	margin: 0 0 2em 0;
+																					padding: 0;
+																				}
+/* Products Page 
+-------------------------------------------------------------- */	
+.products-page-wine h4															{	font-size: 2em;
+																					font-weight: bold;
+																				}
+																				
+.products-page-wine p															{	color: #888;
+																				}
+																				
+.products-sidebar-right p														{	padding-right: 6em;
+																				}
+																				
+.products-sidebar-right ul li													{	list-style: none;
+																				}
+																				
+.products-sidebar-right a														{	color: #3b2133;
+																					text-decoration: underline;
+																				}
+
+.file-attachment																{	margin: 2em 0 0 0;
+																				}
+
+/* Wine List
+--------------------------------------------------------------*/																				
+.wine-list																		{	/* margin-bottom: 2em; */
+																				}																			
+.wine-list	h6																	{	font-size: 1em;
+																					padding: 0 0 .5em 1em;
+																				}
+																				
+h4.wine-list-name																{	color: #444;
+																					font-weight: bold;
+																					font-size: 1.2em;
+																					padding: 2em 0 0 0;
+																					margin: 0;
+																					/* width: 180px; */
+																					
+																				}
+																				
+h4.wine-list-country															{	color: #777;
+																					font-weight: bold;
+																					font-size: 1em;
+																					padding: 0;
+																					margin: 0;
+																				}
+
+.wine-list ul li																{	list-style: none;
+																				}
+																				
+.wine-list a																	{	text-decoration: underline;
+																					color: #444;
+																				}
+
+.wine-page-illustration															{	/* background: #ebe8e2; */
+																					padding: 0 1em 1em 1em;
+																				}																				
+.wine-notes																		{	color: #444;
+																				}
+																																						
+.view-Olive-Oil .views-field-tid,
+.view-Wines .views-field-tid													{	font-size: 1.2em;
+																					font-weight: bold;
+																					padding: 44px 0 0 4px;
+																					margin: 0px 0 0 120px;
+																					width: 100px;
+																					height: 100px;
+																					color: #fff;
+																					text-transform: uppercase;
+																					text-align: center;
+																					background: url('/sites/default/files/images/new.png');
+																					background-repeat: no-repeat;
+																				}
+																							
+.wine-title , .oil-title															{	font-weight: bold;
+																					font-size: 2em;
+																					color: #444;
+																					margin: .4em 0 .5em 0;
+																					padding-bottom: .4em;
+																				}
+																				
+.wine-page p																	{	color: #888;
+																				}																			
+.wines-menu																		{	/*
+background: #efefef;
+																					padding: 1em 0 1em 0;
+																					border-radius: 5px;
+*/
+																				}
+																				
+.acids-table																	{	margin-bottom: 3em;
+																					font-size: .9em;
+																				}
+																				
+.acids-table-name																{	background: #eee;
+																					font-size: 1em;
+																					font-weight: bold;
+																					padding: 1em;
+																					border: 1px solid #444;
+																				}
+
+/* About Us 
+-------------------------------------------------------------- */
+.about-us			 															{	color: #222;
+																					font-size: 1.1em;
+																				}
+																				
+.about-us p			 															{	
+																				}
+																				
+.about-us-content			 													{	padding: 3em 2em 4em 2em;
+																					border-radius: 5px;
+																				}
+																					
+.about-us-content-left															{
+																				}
+																				
+.about-us-sidebar-right	h2.block-title											{	font-weight: bold;
+																					font-size: 1.2em;
+																					color: #0669e4;
+																					border-top: 3px solid #0669e4;
+																					/* padding: .2em 0 0 0; */
+																					margin-top: 1em;
+																				}
+
+.about-us-sidebar-right	img														{	padding: 0 .3em 0 .3em;
+																					border: 1px dotted #ccc;
+																					/* margin-left: 2em; */
+																				}	
+
+.about-us-sidebar-right	ul	li													{	list-style-type: none;
+																				}	
+
+.about-us-sidebar-right	a														{	/* margin-left: 2em; */
+																					color: #3b2133;
+																					text-decoration: underline;
+																				}																			
+
+.language-switcher	ul															{	float: right;
+																					padding: .4em 3em .2em 0;
+																					background: #04080b;
+																					border-radius: 5px;
+																					border: 1px solid #444;
+																				}																			
+
+.language-switcher	ul	li														{	list-style: none;
+																					float: left;
+																					margin-left: 3em;
+																					font-size: .9em;
+																					font-weight: bold;
+																				}																		
+
+.language-switcher	ul	li	a													{	color: #fff;
+																				}																		
+
+.language-switcher	ul	li	img													{	margin-right: .5em;
+																				}
+																				
+.footer-wrapper h2.block-title													{	color: #b4ff19;
+																					border-top: none;
+																					border-bottom: 1px dotted #b4ff19;
+																					padding-bottom: .4em;
+																				}
+
+
+/* Footer
+-------------------------------------------------------------- */																				
+.footer-wrapper .views-field-title a											{	color: #fff;
+																					text-decoration: underline;
+																				}
+
+.footer-wrapper .views-view-grid tbody tr td img 								{	float: left;
+																					margin-right: 0;
+																					margin-bottom: 0;
+																				}
+
+.footer-suppliers-logo															{	margin-bottom: 2em;
+																				}
+																				
+/* Primary Menu
+/-------------------------------------------------------------- */
+.primary-menu-inner ul.menu li 													{	padding: .1em 4em 0 0;
+																				}																				
+																				
+.primary-menu-inner ul.menu li a												{	text-transform: uppercase;
+																					font-size: .8em;
+																				}
+														
+.primary-menu-inner ul.menu li a:link,
+.primary-menu-inner ul.menu li a:visited 										{	border-left: none;
+  																					color: #aeaeae;
+																				}
+
+/* styles for standard and Superfish primary menu */
+.primary-menu-inner ul.menu li a:focus,
+.primary-menu-inner ul.menu li a:hover,
+.primary-menu-inner ul.menu li:hover a,
+.primary-menu-inner ul.menu li.hover a,
+.primary-menu-inner ul.menu li.active-trail a,
+.primary-menu-inner ul.sf-menu li a:hover,
+.primary-menu-inner ul.sf-menu li:hover a,
+.primary-menu-inner ul.sf-menu li.hover a 										{	background:none;
+																				  	color: #fff;
+																				}
+
+.primary-menu-inner ul.menu li.active-trail a.active 							{	color: #fff;
+																				}
+
+.primary-menu-inner ul li.last a,
+.primary-menu-inner ul.sf-menu li.last 											{	border-right: none;
+}
+
+/* 2nd Level */
+.primary-menu-inner ul.sf-menu li ul 											{	background: none;
+  																					border-left: none;
+																				}
+
+.primary-menu-inner ul.sf-menu li ul.menu 										{	border-bottom: none;
+																					border-left: none;
+																					border-right: none;
+																					margin-top: -8em;
+																				}
+
+.primary-menu-inner ul.sf-menu li ul.menu li 									{	border-bottom: none;
+																					padding: .2em 6em 0 2em;
+																					background: #fff;
+																					margin-bottom: 1px;
+																					margin-left: -4em;
+																					border-radius: 5px;
+																				}
+
+.primary-menu-inner ul.sf-menu ul li.last 										{	border-right: none;
+																				}
+
+.primary-menu-inner ul.sf-menu li ul.menu a:link,
+.primary-menu-inner ul.sf-menu li ul.menu a:visited 							{	background: none;
+																				  	border-left: none;
+																				  	color: #000;
+																				}
+
+.primary-menu-inner ul.sf-menu li:hover ul li a:link,
+.primary-menu-inner ul.sf-menu li:hover ul li a:visited,
+.primary-menu-inner ul.sf-menu li.hover ul li a:link,
+.primary-menu-inner ul.sf-menu li.hover ul li a:visited 						{	color: #000;
+																				}
+
+.primary-menu-inner ul.sf-menu li.last a:link,
+.primary-menu-inner ul.sf-menu li.last a:visited,
+.primary-menu-inner ul.sf-menu li.last ul li a:link,
+.primary-menu-inner ul.sf-menu li.last ul li a:visited 							{	border-right: none;
+																				}
+
+.primary-menu-inner ul.sf-menu li.sfHover ul.menu li:hover,
+.primary-menu-inner ul.sf-menu li.sfHover ul.menu li a:focus,
+.primary-menu-inner ul.sf-menu li.sfHover ul.menu li a:hover 					{	background: #eee;
+																				  	color: #535353;
+																				}
+																			
+.footer .fusion-inline-menu .inner ul li  		 								{	padding: 0 2em 0 2em;
+																				}
+																			
+.footer .fusion-inline-menu .inner ul li a:hover 								{	background: none;
+																					text-decoration: underline;
+																				}	
+																				
+																																		
+																				
+																				
+																				

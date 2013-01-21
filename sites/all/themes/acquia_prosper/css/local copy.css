@@ -1,0 +1,547 @@
+/* $Id: local-sample.css,v 1.2 2010/09/17 21:36:06 eternalistic Exp $ */
+
+/****************************/
+/* LOCAL CSS                */
+/****************************/
+
+/* Put your custom CSS and CSS overrides in this file and  */
+/* rename it local.css.  By restricting your CSS changes   */
+/* to local.css, your changes will not be overwritten when */
+/* upgrading to a new version of this theme.  You can also */
+/* use a local-rtl.css file for the equivalent in RTL.     */
+
+/* Steps to activate local.css:                       */
+/* 1. Add your custom CSS to this file                */
+/* 2. Rename this file to local.css                   */
+/* 3. Clear cached data at admin/settings/performance */
+
+
+
+/* ================================ Colors ================================ */
+
+/* 	Olive Oil 	#cbc972 
+				#afbbae
+				#475531
+				
+	Wine		#3b2133
+				#190e16
+				#7f1399
+						
+				*/
+
+/* Basic Typography & Colors
+-------------------------------------------------------------- */
+html, .page {
+  background: #3b2133;
+  color: #777;
+}
+
+body {
+  background: #fff;
+}
+
+.footer-wrapper,
+.footer-message-wrapper {
+  background: #3b2133;
+  color: #ddd;
+}
+
+.footer-wrapper {
+  border-top: none;
+}
+
+.footer-wrapper ul li {		float: left;
+							display: block;
+							padding-right: 2em;
+							font-size: .9em;
+}
+
+
+.header-group-wrapper {
+  background: #3b2133;
+}
+
+.header-group-inner {
+  background: #3b2133;
+}
+
+.header-primary-menu-wrapper {
+  background: #3b2133;
+  border-bottom: none;
+}
+
+.header-primary-menu-inner {
+  background: #3b2133;
+  border-top: 1px solid #3b2133;
+  border-bottom: 1px solid #3b2133;
+}
+
+#main-wrapper {	padding: 0;
+}
+
+.main-inner {	background: #fff;
+}
+
+/* Header Top */
+.header-top-wrapper {
+  background: #fff;
+}
+
+.header-group-inner {
+padding: 0;
+}
+
+#header-group-inner {	/* border-bottom: 10px solid #ddd; */
+}
+
+.footer-message-wrapper {	background: #3b2133;
+							color: #fff;
+}
+
+h1.title	{	display: none;
+}
+
+h2.block-title	{	font-size: 1.4em;
+					font-weight: bold;
+					border-bottom: 1px dotted #3b2133;
+					padding: 1em 0 .4em 1em;
+}
+
+h3		{	font-size: 1.4em;
+}
+
+/*
+p															{	padding: 1em 4em 0 2em;
+															}
+*/
+
+a:link, a:visited {
+color: #7f1399;
+}
+
+.header-primary-menu-inner ul.menu li {	font-size: .86em;
+										text-transform: uppercase;
+										margin-left: 1px;
+}
+
+.item-list ul li {	list-style: none;
+}
+
+div.panels-ipe-display-container .panel-pane .pane-title {	padding: 1em 0 .4em 1em;
+}
+
+.pane-node-title .fusion-callout	{	padding: 1em;
+										color: #fff;
+										background-color: #000;
+	}
+/* ------------------------------------------------ Sub Menu ------------------------------------------------*/
+.preface-top 												{	padding: 0;
+															}
+
+.preface-top-inner 											{	background: #190e16;
+  																/* border-top: 1px solid #fff; */						
+															}
+
+.preface-top-inner .block 									{	float: left;
+																margin-bottom: 0;
+																width: 100%;
+															}
+															
+.block .inner 												{	margin-left: 0;
+																margin-right: 0;
+															}					
+					
+.preface-top-inner .block .inner 							{	margin-left: 0;
+																margin-right: 0;
+															}
+					
+.preface-top-inner .block ul, .block ol 					{	margin-left: 0;
+																padding: 0;
+															}					
+
+.preface-top-inner ul li									{	list-style-image: none;
+																border: none;
+																margin-right: 1px;
+																/* text-shadow: 1px 1px #eee; */
+															}				
+
+.preface-top-inner ul li a 									{	text-decoration: none;
+																font-size: .88em;
+																padding: .4em 8em .1em 8em;
+																background: #190e16;
+																color: #fff;
+																border-right: 1px solid #777;
+															}
+/* ----------------------------- styles for standard and Superfish primary menu ---------------------------- */
+
+.primary-menu-inner ul.menu li a:link, .primary-menu-inner ul.menu li a:visited {
+display: block;
+float: left;
+padding: .6em 6em .2em 6em;
+}
+															
+.primary-menu-inner ul.menu li a:link,
+.primary-menu-inner ul.menu li a:visited {
+  border-left: none;
+  /*
+border-top-left-radius: 20px 5px;
+  -moz-border-top-left-radius: 20px 5px;
+  border-top-right-radius: 20px 5px;
+  -moz-border-top-right-radius: 20px 5px;
+*/
+  color: #fff;
+}
+
+.primary-menu-inner ul li.last a,
+.primary-menu-inner ul.sf-menu li.last {
+  border-right: none;
+  /*
+border-top-left-radius: 20px 5px;
+  -moz-border-top-left-radius: 20px 5px;
+  border-top-right-radius: 20px 5px;
+  -moz-border-top-right-radius: 20px 5px;
+*/
+}
+
+.primary-menu-inner ul.menu li a:focus,
+.primary-menu-inner ul.menu li a:hover,
+.primary-menu-inner ul.menu li:hover a,
+.primary-menu-inner ul.menu li.hover a,
+.primary-menu-inner ul.menu li.active-trail a,
+.primary-menu-inner ul.sf-menu li a:hover,
+.primary-menu-inner ul.sf-menu li:hover a,
+.primary-menu-inner ul.sf-menu li.hover a {
+  background: #3b2133;
+  color: #fff;
+  /* text-shadow: 1px 1px #eee; */
+}
+
+#primary-menu ul.menu li span.nolink:hover,
+#primary-menu ul.menu li span.nolink.hover,
+#primary-menu ul.menu li:hover span.nolink,
+#primary-menu ul.menu li.hover span.nolink,
+#primary-menu ul.menu li.active-trail span.nolink,
+#primary-menu ul.sf-menu li.sfHover span.nolink {
+  background: #3b2133;
+  color: #eee;
+  /* text-shadow: 1px 1px #eee; */
+}
+
+.primary-menu-inner ul.menu li.active-trail a.active {
+  color: #d7aae3;
+}
+
+#primary-menu.block .inner {	margin-left: -1px;
+								margin-right: 10px;
+}
+
+ul.nice-menu a {	padding: 0.3em 4em 0.3em 4em;
+}
+
+
+.suppliers	{	padding-left: 2em;
+}
+
+/* -------------------------------- Home Page -------------------------------- */
+.homepage													{	background: #3b2133;
+															}
+
+.homepage img												{	padding: 0 0 2em .6em;
+															}
+
+.homepage-inside 											{	padding: 0;
+															}
+															
+.homepage .panels-flexible-region-homepage-sidebar_right__ 	{	float: left;
+																width: 100%;
+															}													
+
+.homepage-sidebar-right										{	background: #afbbae;
+																float: right;
+																padding-top: 6em;
+																/* border-left: 4px solid #475531; */
+															}
+
+.homepage-sidebar-right h2									{	border: none;
+																font-size: 1.2em;
+																color: #3b2133;
+															}
+													
+.wine-top-sellers .item-list ul li 							{	list-style-image: url("http://image:8888/sites/default/files/images/red_wine.png");
+																margin-left: .5em;
+															}
+
+.featured-supplier h3										{	font-size: 1.4em;
+																font-weight: bold;
+																color: #7f1399;
+																padding: 1em 0 0 1em;
+															}
+
+	
+#wine-of-the-month									{	background: #fafafa;
+														padding-bottom: 1em;
+														margin-left: -.5em;
+														border-top: 1px solid #7f1399;
+														border-bottom: 1px solid #7f1399;
+													}
+													
+#wine-of-the-month .item-list ul li 				{	list-style-image: url("http://image:8888/sites/default/files/images/red_wine.png");
+														margin-left: 1em;
+													}	
+
+/* -------------------------------- Country Page -------------------------------- */	
+
+.country											{	background: #7f1399;
+													}		
+
+.country-title										{	color: #7f1399;
+														font-size: 2em;
+														font-weight: bold;
+														margin-bottom: 2em;
+														text-transform: uppercase;
+													}
+
+.country-sidebar-left								{	padding: 4em 0 20em 2em;
+														background: #fff;
+														width: 64%;
+														display: block;
+													}
+
+.country-sidebar-left p								{	padding-right: 2em;
+														padding-top: .8em;
+													}
+
+.country-sidebar-right								{	color: #eee;
+														padding: 2em 0 20em 0;
+														margin: 0;
+													}
+
+.country-sidebar-right h2							{	color: #fff;
+														margin-bottom: 1em;
+														font-size: 1em;
+														text-transform: uppercase;
+														font-weight: bold;
+														border-color: #fff;
+														text-align: center;
+													}
+
+.country-sidebar-right a							{	color: #fff;
+													}
+
+.country-sidebar-right li a.active					{	color: #f7ec6e;
+													}
+
+.countries-block-suppliers-locations				{	margin-bottom: 2em;
+													}
+													
+.countries-block-suppliers							{	margin-bottom: 2em;
+													}
+/* -------------------------------- Supplier Page -------------------------------- */	
+
+.supplier											{	background: #7f1399;
+													}	
+
+.supplier-title										{	color: #7f1399;
+														font-size: 2em;
+														font-weight: bold;
+														text-transform: uppercase;
+													}	
+
+.supplier-sidebar-right								{	padding: 4em 0 10em 0;
+													}	
+
+.supplier-sidebar-left								{	padding: 8em 0 20em 2em;
+														background: #fff;
+														width: 64%;
+														display: block;
+														height: 400px;
+													}	
+
+.supplier-sidebar-left p							{	padding-right: 4em;
+													}
+													
+.supplier-sidebar-right h2							{	color: #fff;
+														margin-bottom: 1em;
+														font-size: 1em;
+														text-transform: uppercase;
+														font-weight: bold;
+														border-color: #fff;
+														text-align: center;
+													}	
+
+.supplier-sidebar-right a							{	color: #fff;
+														padding-left: 1em;
+													}
+
+.supplier-logo										{	padding-bottom: 4em;
+													}
+
+/* -------------------------------- Products Page -------------------------------- */	
+
+.products-canvas									{	background-color: #3b2133;
+													}
+													
+.wine-list											{	color: #ccc;
+														padding-top: 4em;
+														padding-bottom: 10em;
+													}	
+	
+.wine-list h6										{	color: #ccc;
+														font-size: 1em;
+														padding: 0 1em 1em 1em;
+													}
+
+.panels-flexible-row 								{	padding: 0;
+														margin: 0;
+													}
+
+.block 												{	float: left;
+														margin-bottom: 0;
+														width: 100%;
+													}	
+
+.black												{	background: #3b2133;
+														width: 960px;
+													}
+													
+/* -------------------------------- Wine Page -------------------------------- */	
+
+.wine-page , .products-page-wine					{	background: #7f1399;
+													}
+
+.products-page-wine									{	padding: 0 0 0 0;
+													}
+
+.panels-flexible-region-products-page-wine-sidebar_left 
+													{	float: left;
+														width: 100%;
+													}
+
+.products-page-wine	.views-view-grid tbody tr 		{	border-color: #000;
+													}
+
+.products-page-wine .views-field-tid				{	padding-left: 1em;
+													}
+													
+.products-page-wine	.views-view-grid tbody tr td	{	padding: 1em 2em 1em 2em;
+														/* border: 4px double #3b2133; */
+														background: #fff;
+													}
+
+.country-name										{	display: block;
+														padding: .6em 1em;
+														background: #7f1399;
+														color: #fff;
+														border-radius: 4px;
+														text-align: center;
+													}
+
+.country-name a										{	color: #fff;
+													}
+													
+.products-page-wine	h4								{	font-size: 1em;
+														font-weight: bold;
+														color: #3b2133;
+														width: 160px;
+														padding: .4em 0 .2em 1em;
+													}
+
+.products-page-wine	img								{	padding: 2em 0 0 1.5em;
+														text-align: center;
+												
+													}
+
+.wine-page-description								{	background: #fff;
+														border-left: 4px solid #ccc;
+														border-right: 4px solid #ccc;
+														padding-bottom: 20em;
+													}
+
+/*
+.wine-description									{	background: #fff;
+														border-left: 4px solid #ccc;
+														border-right: 4px solid #ccc;
+														/* margin-left: 11px; */
+													}
+*/
+	
+.wine-list a										{	text-decoration: none;
+													}
+	
+.wine-info											{	padding: 1em 1em 2em 2em;
+														margin-top: 0;
+														margin-left: 1em;
+														background: #eee;
+														color: #777;
+														line-height: 1.8em;
+														border-top: 10px solid #444;
+													}
+
+.wine-notes 										{	padding: 3em 0 0em 2em;
+														font-size: 1em;
+													}
+
+.tasting-notes										{	padding: 0 0 2em 2em;
+														font-size: 1em;
+														color: #7f1399;
+													}
+
+.wine-illustration									{	padding-top: 3em;
+														padding-bottom: 2em;
+													}
+
+.wine-page-description .pane-node-title , 
+.wine-description h3								{	font-weight: bold;
+														font-size: 1.8em;
+														padding: 2em 2em .4em .6em;
+														border-bottom: 4px solid #7f1399;
+														color: #7f1399;
+														text-transform: uppercase;
+													}
+													
+/* -------------------------------- About Us Page -------------------------------- */	
+
+.about-us											{	background: #fff;
+														color: #5a6f5e;
+													}
+
+.about-us-content									{	padding: 2em 2em 2em 3em;
+														border-top-left-radius: 20px;
+														border-bottom-right-radius : 20px;
+													}
+													
+.about-us-sidebar-right								{	float: right;
+														background: #afbbae;
+														padding: 2em 0 10em 0;
+														text-align: center;
+														border-left: 4px solid #475531;
+													}
+													
+.about-us-sidebar-right h2							{	border-color: #fff;
+														font-size: 1em;
+														text-transform: uppercase;
+														color: #fff;
+													}
+
+.about-us-content									{	margin: 4em 0 0 0;
+													}
+
+.about-us-content p									{	
+													}
+													
+.about-us-sidebar-right	 a							{	color: #444;
+													}
+													
+.about-us-sidebar-right	 .item-list ul li 			{	/* text-align: left; */
+													}
+													
+/* -------------------------------- Stories -------------------------------- */
+
+.story-page											{	padding: 4em 4em 10em 3em;
+													}
+
+
+
+
+
+
