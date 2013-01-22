@@ -1,0 +1,45 @@
+<?php
+
+// Implements hook_node_operations
+function addterm_node_operations()
+{
+	$operations['add_term_wine'] = array(   'label'	=> 'Add the Wine taxonomy term',
+										'callback'	=> 'node_operations_addterm_wine',
+								);
+								
+	$operations['add_term_olive_oil'] = array(   'label'	=> 'Add the Olive Oil taxonomy term',
+												'callback'	=> 'node_operations_addterm_olive_oil',
+								);
+								
+	return $operations;							
+}
+
+function node_operations_addterm_wine($nodes)
+{
+	$terms = taxonomy_get_term_by_name('Wine');
+	$wine = $terms[0];
+	
+	foreach($nodes as $nid)
+		addterm_add_term( $nid , $wine);
+}
+
+function node_operations_addterm_olive_oil($nodes)
+{
+	$terms = taxonomy_get_term_by_name('Olive Oil');
+	$olive_oil = $terms[0];
+	
+	foreach($nodes as $nid )
+		addterm_add_term( $nid , $olive_oil);
+}
+
+function addterm_add_term($nid , $term)
+{
+	$node = node_load($nid, NULL, TRUE);
+	
+	if (!isset($node->taxonomy[$term->tid])) 
+	{
+		$node->taxonomy[$term->tid] = $term;
+		node_save($node);
+	}
+
+}

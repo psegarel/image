@@ -1,0 +1,5 @@
+name = "Add Term"
+description = "Add the add term menu item to nodes operations"
+package = "Custom Modules"
+core = 6.x
+
