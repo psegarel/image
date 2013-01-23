@@ -1,5 +1,4 @@
 /* $Id: ie7-fixes.css,v 1.5 2010/09/17 21:36:06 eternalistic Exp $ */
-
 /* IE7 fixes
 -------------------------------------------------------------- */
 /* Lists */
@@ -16,17 +15,19 @@ ul li ul li ul li {
   list-style-image: url(../images/list-level-3_ie.png);
 }
 */
-
 /* prevent collapsing pager container */
+/* line 21, ../sass/ie7-fixes.scss */
 ul.pager {
   height: 1%;
 }
 
+/* line 25, ../sass/ie7-fixes.scss */
 ul.pager li {
   line-height: 200%;
   margin-top: -3px;
 }
 
+/* line 33, ../sass/ie7-fixes.scss */
 ul.pager li.pager-first a,
 ul.pager li.pager-previous a,
 ul.pager li.pager-next a,
@@ -34,10 +35,12 @@ ul.pager li.pager-last a {
   margin: 0;
 }
 
+/* line 37, ../sass/ie7-fixes.scss */
 ul.pager li.pager-current {
   height: 21px;
 }
 
+/* line 42, ../sass/ie7-fixes.scss */
 ul.pager li.pager-item a:link,
 ul.pager li.pager-item a:visited {
   display: block;
@@ -48,6 +51,7 @@ ul.pager li.pager-item a:visited {
 }
 
 /* Clearfixes */
+/* line 54, ../sass/ie7-fixes.scss */
 ul.links.inline.uc-categories,
 ul.pager,
 .prosper-quicktabs .quicktabs_main,
@@ -56,15 +60,18 @@ ul.pager,
 }
 
 /* A. Avoid collapsing margin bug: move margin-bottom from block to block-inner */
+/* line 59, ../sass/ie7-fixes.scss */
 .block {
   margin-bottom: 0;
 }
 
+/* line 63, ../sass/ie7-fixes.scss */
 .block > .inner {
   margin-bottom: 1.5em;
 }
 
 /* B. Now remove new margin from selected elements per style.css */
+/* line 71, ../sass/ie7-fixes.scss */
 .primary-menu .inner,
 .secondary-menu .inner,
 .search-box .inner,
@@ -74,17 +81,20 @@ ul.pager,
 
 /* Ubercart */
 /* prevent elements from disappearing */
+/* line 78, ../sass/ie7-fixes.scss */
 .product-group .content #product-details,
 .block-uc_cart h2.block-title span {
   zoom: 1;
 }
 
 /* prevent overlapping AJAX fieldsets */
+/* line 83, ../sass/ie7-fixes.scss */
 #uc-cart-checkout-form fieldset.collapsible {
   position: static;
 }
 
 /* improve appearance of fieldset legends */
+/* line 88, ../sass/ie7-fixes.scss */
 #uc-cart-checkout-form fieldset legend {
   margin-bottom: 10px;
   padding-left: 10px;

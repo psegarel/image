@@ -1,357 +1,281 @@
 /* $Id: acquia-prosper-style.css,v 1.9 2010/09/17 21:36:06 eternalistic Exp $ */
+
 /* Basic Typography & Colors
 -------------------------------------------------------------- */
-/* line 5, ../sass/acquia-prosper-style.scss */
 body {
   font-family: Arial, Helvetica, Verdana, "Bitstream Vera Sans", sans-serif;
-  font-size: 75%;
-  /* also set in acquia_prosper.info: settings[base-font-size] = font-size-12 */
+  font-size: 75%;   /* also set in acquia_prosper.info: settings[base-font-size] = font-size-12 */
 }
 
 /* Headings */
-/* line 11, ../sass/acquia-prosper-style.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 100%;
 }
 
-/* line 17, ../sass/acquia-prosper-style.scss */
 h1,
 h1.title {
-  font-size: 250%;
-  /* 30px/12px */
+  font-size: 250%;   /* 30px/12px */
 }
 
-/* line 21, ../sass/acquia-prosper-style.scss */
 h2 {
-  font-size: 200%;
-  /* 24px/12px */
+  font-size: 200%;   /* 24px/12px */
 }
 
-/* line 25, ../sass/acquia-prosper-style.scss */
 h3 {
-  font-size: 166.67%;
-  /* 20px/12px */
+  font-size: 166.67%;   /* 20px/12px */
 }
 
-/* line 29, ../sass/acquia-prosper-style.scss */
 h4 {
-  font-size: 116.67%;
-  /* 14px/12px */
+  font-size: 116.67%;   /* 14px/12px */
 }
 
-/* line 33, ../sass/acquia-prosper-style.scss */
 h5 {
-  font-size: 100%;
-  /* 12px/12px */
+  font-size: 100%;   /* 12px/12px */
 }
 
-/* line 37, ../sass/acquia-prosper-style.scss */
 h6 {
-  font-size: 83.33%;
-  /* 10px/12px */
+  font-size: 83.33%;  /* 10px/12px */
 }
+
 
 /* Specific Typography
 -------------------------------------------------------------- */
-/* line 44, ../sass/acquia-prosper-style.scss */
 #site-name {
-  font-size: 200%;
-  /* 24px/12px */
+  font-size: 200%;   /* 24px/12px */
   line-height: 85%;
 }
 
-/* line 49, ../sass/acquia-prosper-style.scss */
 #slogan {
-  font-size: 116.67%;
-  /* 14px/12px */
+  font-size: 116.67%;   /* 14px/12px */
   line-height: 120%;
 }
 
-/* line 54, ../sass/acquia-prosper-style.scss */
 #footer-message {
   font-size: 90%;
 }
 
-/* line 58, ../sass/acquia-prosper-style.scss */
 .header-primary-menu-inner ul.menu li {
-  font-size: 108.33%;
-  /* 13px/12px */
+  font-size: 108.33%;   /* 13px/12px */
 }
 
-/* line 62, ../sass/acquia-prosper-style.scss */
 ul.links li {
-  font-size: 100%;
-  /* 12px/12px */
+  font-size: 100%;   /* 12px/12px */
 }
 
-/* line 66, ../sass/acquia-prosper-style.scss */
 ul.pager li.pager-current {
   line-height: 190%;
 }
 
 /* forms */
-/* line 71, ../sass/acquia-prosper-style.scss */
 form input.form-submit {
   font-size: 80%;
 }
 
-/* line 75, ../sass/acquia-prosper-style.scss */
 legend {
   font-family: "Myriad Pro", Myriad, "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-size: 133.3%;
-  /* 16px/12px */
+  font-size: 133.3%;   /* 16px/12px */
 }
 
-/* line 82, ../sass/acquia-prosper-style.scss */
 legend.collapse-processed,
 legend.collapse-processed a:link,
 legend.collapse-processed a:visited {
   font-family: "Myriad Pro", Myriad, "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-size: 116.67%;
-  /* 14px/12px */
+  font-size: 116.67%;   /* 14px/12px */
 }
 
 /* Prosper Skinr styles */
-/* line 90, ../sass/acquia-prosper-style.scss */
 .prosper-rounded-title h2.block-title,
 .prosper-shoppingcart-light h2.block-title,
 .prosper-menu-list h2.block-title {
-  font-size: 116.67%;
-  /* 14px/12px */
-  line-height: 250%;
-  /* 30px/12px */
+  font-size: 116.67%;   /* 14px/12px */
+  line-height: 250%;   /* 30px/12px */
 }
 
-/* line 96, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-plain h2.block-title,
 .prosper-gray-rounded-style h2.block-title {
   line-height: 120%;
 }
 
-/* line 102, ../sass/acquia-prosper-style.scss */
 .prosper-mediumgraybackground-bottomborder h2.block-title,
 .prosper-lightgraybackground-border h2.block-title,
 .prosper-shoppingcart-dark h2.block-title {
-  font-size: 150%;
-  /* 18px/12px */
+  font-size: 150%;   /* 18px/12px */
 }
 
-/* line 106, ../sass/acquia-prosper-style.scss */
 .prosper-gradient-border h2.block-title {
-  font-size: 250%;
-  /* 30px/12px */
+  font-size: 250%;   /* 30px/12px */
 }
 
-/* line 111, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light table,
 .prosper-shoppingcart-dark table {
-  font-size: 91.67%;
-  /* 11px/12px */
+  font-size: 91.67%;   /* 11px/12px */
 }
 
-/* line 116, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light .cart-block-summary-links ul li,
 .prosper-shoppingcart-dark .cart-block-summary-links ul li {
-  font-size: 100%;
-  /* 12px/12px */
+  font-size: 100%;   /* 12px/12px */
 }
 
-/* line 120, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .content-inner h3.title {
-  font-size: 150%;
-  /* 18px/12px */
+  font-size: 150%;   /* 18px/12px */
 }
 
-/* line 124, ../sass/acquia-prosper-style.scss */
 .prosper-comments-clean .comment-wrapper h3.title a {
-  font-size: 100%;
-  /* 12px/12px */
+  font-size: 100%;   /* 12px/12px */
 }
 
-/* line 128, ../sass/acquia-prosper-style.scss */
 .footer .fusion-inline-menu ul li {
-  font-size: 100%;
-  /* 12px/12px */
+  font-size: 100%;   /* 12px/12px */
 }
 
 /* Ubercart */
-/* line 133, ../sass/acquia-prosper-style.scss */
 .category-grid-products .catalog-grid-title {
-  font-size: 116.67%;
-  /* 14px/12px */
+  font-size: 116.67%;   /* 14px/12px */
 }
 
-/* line 137, ../sass/acquia-prosper-style.scss */
 .category-grid-products .catalog-grid-sell-price {
-  font-size: 150%;
-  /* 18px/12px */
+  font-size: 150%;   /* 18px/12px */
 }
 
-/* line 141, ../sass/acquia-prosper-style.scss */
 .product-group .uc-price-display {
-  font-size: 200%;
-  /* 24px/12px */
+  font-size: 200%;   /* 24px/12px */
 }
 
-/* line 145, ../sass/acquia-prosper-style.scss */
 #product-details .product-field .sell {
-  font-size: 200%;
-  /* 24px/12px */
+  font-size: 200%;   /* 24px/12px */
 }
 
-/* line 150, ../sass/acquia-prosper-style.scss */
 #cart-form-products table td.subtotal .uc-price,
 #uc-cart-checkout-form table td.subtotal .uc-price {
-  font-size: 116.67%;
-  /* 14px/12px */
+  font-size: 116.67%;   /* 14px/12px */
 }
 
-/* line 154, ../sass/acquia-prosper-style.scss */
 #uc-cart-checkout-form .uc-price {
-  font-size: 108.33%;
-  /* 13px/12px */
+  font-size: 108.33%;   /* 13px/12px */
 }
 
-/* line 158, ../sass/acquia-prosper-style.scss */
 .order-review-table {
-  font-size: 100%;
-  /* 12px/12px */
+  font-size: 100%;   /* 12px/12px */
 }
 
-/* line 164, ../sass/acquia-prosper-style.scss */
 #edit-update.form-submit,
 #edit-cancel.form-submit,
 #edit-back.form-submit {
-  font-size: 100%;
-  /* 12px/12px */
+  font-size: 100%;   /* 12px/12px */
 }
 
-/* line 168, ../sass/acquia-prosper-style.scss */
 .more-product-images img {
   margin: 3px;
 }
 
-/* line 172, ../sass/acquia-prosper-style.scss */
 .attribute input.form-text {
   width: 150px;
 }
 
+
 /* HTML Elements
 -------------------------------------------------------------- */
-/* line 179, ../sass/acquia-prosper-style.scss */
 body {
   padding: 0;
 }
 
 /* Blockquotes */
-/* line 184, ../sass/acquia-prosper-style.scss */
 blockquote {
   font-style: italic;
   margin: 10px 0;
   padding: 10px 30px;
 }
 
+
 /* Site Info
 -------------------------------------------------------------- */
-/* line 193, ../sass/acquia-prosper-style.scss */
 #logo {
   float: left;
   margin: 0 10px 0 0;
 }
 
-/* line 198, ../sass/acquia-prosper-style.scss */
 #slogan {
   float: left;
   font-style: italic;
 }
 
-/* line 203, ../sass/acquia-prosper-style.scss */
 #site-name-slogan {
   float: left;
 }
 
+
 /* Regions
 -------------------------------------------------------------- */
+
 /* All Regions
 -------------------------------------------------------------- */
-/* line 213, ../sass/acquia-prosper-style.scss */
 #page-inner {
   border: 0;
   margin-bottom: 0;
   padding: 0;
 }
 
+
 /* Header Regions
 -------------------------------------------------------------- */
 /* Header Group */
-/* line 223, ../sass/acquia-prosper-style.scss */
 .header-group-wrapper {
   float: left;
 }
 
-/* line 227, ../sass/acquia-prosper-style.scss */
 .header-group-inner {
   padding: 40px 0 25px 0;
 }
 
 /* Header Top */
-/* line 232, ../sass/acquia-prosper-style.scss */
 .header-top-wrapper {
   float: left;
   min-height: 32px;
 }
 
-/* line 237, ../sass/acquia-prosper-style.scss */
 .header-top {
   overflow: visible;
   position: relative;
 }
 
 /* Header top region */
-/* line 243, ../sass/acquia-prosper-style.scss */
 .header-top-region {
   padding: 20px 0 0 0;
 }
 
-/* line 247, ../sass/acquia-prosper-style.scss */
 #header-top-placeholder {
-  display: block;
+  display: block; 
   height: 32px;
   overflow: hidden;
 }
 
 /* Header Site Info */
-/* line 254, ../sass/acquia-prosper-style.scss */
 .header-site-info {
   margin: 0;
 }
 
-/* line 258, ../sass/acquia-prosper-style.scss */
 .header-site-info-inner {
   float: left;
 }
 
 /* Header Wrapper */
-/* line 263, ../sass/acquia-prosper-style.scss */
 .header-group .block {
   margin: 0;
 }
 
+
 /* Header Regions - Secondary menu
 -------------------------------------------------------------- */
-/* line 270, ../sass/acquia-prosper-style.scss */
 .secondary-menu {
   margin-bottom: 0;
   width: auto;
 }
 
-/* line 275, ../sass/acquia-prosper-style.scss */
 .secondary-menu-inner ul.links {
   float: none;
 }
 
-/* line 280, ../sass/acquia-prosper-style.scss */
 .secondary-menu-inner ul.links li a:link,
 .secondary-menu-inner ul.links li a:visited {
   display: block;
@@ -359,15 +283,14 @@ blockquote {
   padding: 7px 10px;
 }
 
-/* line 287, ../sass/acquia-prosper-style.scss */
 .secondary-menu-inner ul.links li a:hover,
 .secondary-menu-inner ul.links li a:focus {
   text-decoration: none;
 }
 
+
 /* Header Regions - Search
 -------------------------------------------------------------- */
-/* line 294, ../sass/acquia-prosper-style.scss */
 .search-box {
   float: right;
   margin-bottom: 0;
@@ -375,13 +298,11 @@ blockquote {
   width: auto;
 }
 
-/* line 301, ../sass/acquia-prosper-style.scss */
 .search-box-inner {
   float: right;
   width: 232px;
 }
 
-/* line 306, ../sass/acquia-prosper-style.scss */
 .search-box-inner form#search-theme-form {
   height: 35px;
   position: absolute;
@@ -391,12 +312,10 @@ blockquote {
   z-index: 10;
 }
 
-/* line 315, ../sass/acquia-prosper-style.scss */
 .search-box-inner #search-input {
   padding: 8px 0 0 10px;
 }
 
-/* line 319, ../sass/acquia-prosper-style.scss */
 .search-box-inner input#edit-search-theme-form-header {
   border: none;
   float: left;
@@ -405,75 +324,68 @@ blockquote {
   width: 185px;
 }
 
-/* line 327, ../sass/acquia-prosper-style.scss */
 .search-box-inner .searchButtonPng {
   margin: -1px 0 0 10px;
   padding: 0;
 }
 
-/* line 332, ../sass/acquia-prosper-style.scss */
 .search-box-inner #search-input input {
   margin: 2px 0 0 0;
 }
 
+
 /*  Preface Regions
 -------------------------------------------------------------- */
-/* line 339, ../sass/acquia-prosper-style.scss */
 .preface-top {
   padding: 20px 0 0 0;
 }
 
+
 /*  Main Area (content + sidebars + main-prefaces + main-postscripts)
 -------------------------------------------------------------- */
-/* line 346, ../sass/acquia-prosper-style.scss */
 #main-wrapper {
   padding: 20px 0;
 }
 
+
 /* Content Regions
 -------------------------------------------------------------- */
-/* line 353, ../sass/acquia-prosper-style.scss */
 #content-inner {
   clear: both;
 }
 
+
 /*  Postscript & Footer Regions
 -------------------------------------------------------------- */
-/* line 360, ../sass/acquia-prosper-style.scss */
 .postscript-bottom {
   padding: 20px 0 0 0;
 }
 
-/* line 366, ../sass/acquia-prosper-style.scss */
 .postscript-bottom a:link,
 .postscript-bottom a:visited,
 .footer-message a:hover {
   color: #fff;
 }
 
-/* line 370, ../sass/acquia-prosper-style.scss */
 .footer {
   padding: 20px 0 0 0;
 }
 
-/* line 374, ../sass/acquia-prosper-style.scss */
 .footer-message {
   padding: 10px 0;
 }
 
+
 /* Primary Menu
 /-------------------------------------------------------------- */
-/* line 381, ../sass/acquia-prosper-style.scss */
 .header-primary-menu-wrapper {
   float: left;
 }
 
-/* line 385, ../sass/acquia-prosper-style.scss */
 .header-primary-menu {
   overflow: visible;
 }
 
-/* line 389, ../sass/acquia-prosper-style.scss */
 .primary-menu {
   margin: 0;
   overflow: visible;
@@ -482,7 +394,6 @@ blockquote {
 }
 
 /* visited pseudo selector so IE6 applies text colour */
-/* line 398, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.menu li a:link,
 .primary-menu-inner ul.menu li a:visited {
   display: block;
@@ -491,19 +402,16 @@ blockquote {
 }
 
 /* styles for Superfish primary menu */
-/* line 405, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu {
   float: none;
 }
 
-/* line 410, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu li.expanded:hover a,
 .primary-menu-inner ul.sf-menu li.expanded.hover a {
   margin-bottom: -5px;
   padding-bottom: 13px;
 }
 
-/* line 416, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu li.expanded:hover ul.menu li a,
 .primary-menu-inner ul.sf-menu li.expanded.hover ul.menu li a {
   margin-bottom: 0;
@@ -511,29 +419,24 @@ blockquote {
 }
 
 /* 2nd Level */
-/* line 422, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu li ul {
   font-size: 90%;
 }
 
-/* line 426, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu li ul.menu {
   margin-left: 1px;
 }
 
-/* line 430, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu ul li.last {
   border-right: none;
 }
 
-/* line 435, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu li ul.menu a:link,
 .primary-menu-inner ul.sf-menu li ul.menu a:visited {
   border-left: none;
   padding: 5px 10px;
 }
 
-/* line 443, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu li.last a:link,
 .primary-menu-inner ul.sf-menu li.last a:visited,
 .primary-menu-inner ul.sf-menu li.last ul li a:link,
@@ -541,38 +444,32 @@ blockquote {
   border-right: none;
 }
 
-/* line 447, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu li.sfHover ul {
   margin-top: 12px;
 }
 
-/* line 451, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu li.sfHover ul.menu li a.active {
   text-decoration: underline;
 }
 
 /* 3rd Level */
-/* line 458, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu .current ul,
 .primary-menu-inner ul.sf-menu ul li:hover ul,
 .primary-menu-inner ul.sf-menu ul li.sfHover ul {
   top: -12px;
 }
 
-/* line 462, ../sass/acquia-prosper-style.scss */
 .primary-menu-inner ul.sf-menu li ul.menu li ul.menu {
   border-bottom: none;
 }
 
 /* Primary menu - Nolink */
-/* line 467, ../sass/acquia-prosper-style.scss */
-#primary-menu ul.menu li span.nolink {
+#primary-menu ul.menu li span.nolink  {
   display: block;
   float: left;
   padding: 8px 20px;
 }
 
-/* line 478, ../sass/acquia-prosper-style.scss */
 #primary-menu ul.menu li span.nolink:hover,
 #primary-menu ul.menu li span.nolink.hover,
 #primary-menu ul.menu li:hover span.nolink,
@@ -583,13 +480,11 @@ blockquote {
   padding-bottom: 13px;
 }
 
-/* line 483, ../sass/acquia-prosper-style.scss */
 #primary-menu ul.menu li ul.menu li.last span.nolink {
   border-left: none;
   padding: 5px 10px;
 }
 
-/* line 490, ../sass/acquia-prosper-style.scss */
 #primary-menu ul.sf-menu li.sfHover ul.menu li span.nolink,
 #primary-menu ul.menu li:hover ul.menu li span.nolink,
 #primary-menu ul.menu li.hover ul.menu li span.nolink {
@@ -597,37 +492,33 @@ blockquote {
   margin-bottom: 0;
 }
 
+
 /* Tables
 /-------------------------------------------------------------- */
-/* line 498, ../sass/acquia-prosper-style.scss */
 thead {
   border: 1px solid #dbdbdb;
 }
 
-/* line 503, ../sass/acquia-prosper-style.scss */
 th,
 thead th {
   padding: 3px 10px;
 }
 
-/* line 507, ../sass/acquia-prosper-style.scss */
 tbody {
   border: none;
 }
 
-/* line 511, ../sass/acquia-prosper-style.scss */
 .profile dt {
   width: 100px;
 }
 
-/* line 515, ../sass/acquia-prosper-style.scss */
 .profile dd {
   margin-left: 115px;
 }
 
+
 /* Pagers
 -------------------------------------------------------------- */
-/* line 522, ../sass/acquia-prosper-style.scss */
 ul.pager {
   margin: 10px 0;
   padding: 9px 5px 5px 5px;
@@ -636,21 +527,18 @@ ul.pager {
   -webkit-border-radius: 2px;
 }
 
-/* line 530, ../sass/acquia-prosper-style.scss */
 ul.pager li {
   display: block;
   margin: 0 5px 0 0;
   float: left;
 }
 
-/* line 537, ../sass/acquia-prosper-style.scss */
 ul.pager li a,
 ul.pager li.pager-current {
   padding: 3px 8px;
   text-transform: uppercase;
 }
 
-/* line 542, ../sass/acquia-prosper-style.scss */
 ul.pager li.pager-current {
   display: block;
   font-weight: bold;
@@ -662,7 +550,6 @@ ul.pager li.pager-current {
   -webkit-border-radius: 2px;
 }
 
-/* line 554, ../sass/acquia-prosper-style.scss */
 ul.pager li a:link,
 ul.pager li a:visited {
   margin: 3px 0 0 0;
@@ -672,13 +559,11 @@ ul.pager li a:visited {
   -webkit-border-radius: 2px;
 }
 
-/* line 563, ../sass/acquia-prosper-style.scss */
 ul.pager li a:hover,
 ul.pager li a:focus {
   text-decoration: none;
 }
 
-/* line 570, ../sass/acquia-prosper-style.scss */
 ul.pager li.pager-first a,
 ul.pager li.pager-previous a,
 ul.pager li.pager-next a,
@@ -693,33 +578,29 @@ ul.pager li.pager-last a {
 }
 
 /* Pager - First */
-/* line 581, ../sass/acquia-prosper-style.scss */
 ul.pager li.pager-first a {
   width: 22px;
 }
 
 /* Pager - Last */
-/* line 586, ../sass/acquia-prosper-style.scss */
 ul.pager li.pager-last a {
   width: 22px;
 }
 
+
 /* Forms
 /-------------------------------------------------------------- */
 /* defaults for all form buttons */
-/* line 594, ../sass/acquia-prosper-style.scss */
 form input.form-submit {
   font-weight: bold;
   margin: 2px;
   padding: 4px 8px;
 }
 
-/* line 600, ../sass/acquia-prosper-style.scss */
 fieldset legend {
   padding: 0 5px;
 }
 
-/* line 607, ../sass/acquia-prosper-style.scss */
 legend,
 legend.collapse-processed,
 legend.collapse-processed a:link,
@@ -732,38 +613,33 @@ legend.collapse-processed a:visited {
   text-transform: uppercase;
 }
 
-/* line 618, ../sass/acquia-prosper-style.scss */
 .form-item input,
 .form-item select,
 .form-item textarea {
   padding: 3px;
 }
 
-/* line 623, ../sass/acquia-prosper-style.scss */
 .form-item .form-radio,
 .form-item .form-checkbox {
   background: none;
   border: none;
 }
 
-/* line 628, ../sass/acquia-prosper-style.scss */
 .form-item .form-checkbox {
   padding: 2px;
 }
 
-/* line 632, ../sass/acquia-prosper-style.scss */
 html.js fieldset.collapsible legend a {
   text-decoration: none;
 }
 
-/* line 636, ../sass/acquia-prosper-style.scss */
 html.js fieldset.collapsed {
   margin-bottom: 15px;
 }
 
+
 /* Nodes
 /-------------------------------------------------------------- */
-/* line 644, ../sass/acquia-prosper-style.scss */
 .node_read_more a:link,
 .node_read_more a:visited {
   padding: 3px 5px;
@@ -771,38 +647,34 @@ html.js fieldset.collapsed {
 }
 
 /* Links list */
-/* line 650, ../sass/acquia-prosper-style.scss */
 ul.links li {
   margin: 0 10px 0 0;
 }
 
 /* Teaser */
-/* line 655, ../sass/acquia-prosper-style.scss */
 .teaser {
   padding: 0 0 20px 0;
 }
 
-/* line 659, ../sass/acquia-prosper-style.scss */
 .node .content .picture {
   float: left;
   margin: 0 15px 15px 0;
 }
 
-/* line 664, ../sass/acquia-prosper-style.scss */
 .node .content .picture img {
   padding: 0;
 }
 
+
 /* Breadcrumbs
 /-------------------------------------------------------------- */
-/* line 671, ../sass/acquia-prosper-style.scss */
 .breadcrumbs .inner {
   padding: 5px 5px 0 5px;
 }
 
+
 /* Clearfixes
 /-------------------------------------------------------------- */
-/* line 681, ../sass/acquia-prosper-style.scss */
 ul.links.inline.uc-categories:after,
 ul.pager:after,
 .prosper-quicktabs .quicktabs_main:after,
@@ -815,26 +687,23 @@ ul.pager:after,
   visibility: hidden;
 }
 
+
 /* Ubercart
 /-------------------------------------------------------------- */
-/* line 693, ../sass/acquia-prosper-style.scss */
 img.category {
   margin: -40px 0 10px 10px;
   padding: 0;
 }
 
-/* line 698, ../sass/acquia-prosper-style.scss */
 .category-grid-products table {
   border-collapse: separate;
   border-spacing: 10px;
 }
 
-/* line 703, ../sass/acquia-prosper-style.scss */
 .category-grid-products {
   clear: both;
 }
 
-/* line 707, ../sass/acquia-prosper-style.scss */
 .category-grid-products td {
   margin: 0 10px;
   padding: 10px;
@@ -843,30 +712,25 @@ img.category {
   -webkit-border-radius: 4px;
 }
 
-/* line 717, ../sass/acquia-prosper-style.scss */
 .category-grid-products .catalog-grid-title,
 .category-grid-products .catalog-grid-sell-price,
 .category-grid-products .add-to-cart {
   text-align: left;
 }
 
-/* line 721, ../sass/acquia-prosper-style.scss */
 .category-grid-products .catalog-grid-sell-price {
   font-weight: bold;
 }
 
-/* line 725, ../sass/acquia-prosper-style.scss */
 ul.links.inline.uc-categories {
-  display: block;
+  display: block ;
 }
 
-/* line 729, ../sass/acquia-prosper-style.scss */
 ul.uc-categories {
   clear: both;
-  display: block;
+  display: block ;
 }
 
-/* line 735, ../sass/acquia-prosper-style.scss */
 ul.uc-categories a:link,
 ul.uc-categories a:visited {
   display: block;
@@ -875,59 +739,49 @@ ul.uc-categories a:visited {
 }
 
 /* Ubercart - product node */
-/* line 742, ../sass/acquia-prosper-style.scss */
 .product-group .images {
   float: left;
   width: 30%;
 }
 
-/* line 747, ../sass/acquia-prosper-style.scss */
 .product-group .content {
   overflow: hidden;
 }
 
-/* line 751, ../sass/acquia-prosper-style.scss */
 .product-group #price-group {
   float: right;
   margin-right: 20px;
 }
 
-/* line 756, ../sass/acquia-prosper-style.scss */
 .product-group #field-group {
   float: left;
   margin-right: 20px;
 }
 
-/* line 761, ../sass/acquia-prosper-style.scss */
 .product-group .uc-price-display {
   float: none;
   padding-left: 0;
 }
 
-/* line 766, ../sass/acquia-prosper-style.scss */
 .product-group .add-to-cart .form-submit {
   margin-left: 0;
 }
 
-/* line 770, ../sass/acquia-prosper-style.scss */
 .product-group .drupal-tabs {
   float: none;
   margin-right: 0;
 }
 
-/* line 775, ../sass/acquia-prosper-style.scss */
 .product-group .drupal-tabs .ui-tabs-nav {
   margin: 0;
 }
 
-/* line 779, ../sass/acquia-prosper-style.scss */
 .product-image {
   display: block;
   float: left;
   margin: 0 20px 20px 0;
 }
 
-/* line 785, ../sass/acquia-prosper-style.scss */
 #product-details {
   margin: 0 0 20px 0;
   overflow: hidden;
@@ -937,59 +791,49 @@ ul.uc-categories a:visited {
   -webkit-border-radius: 4px;
 }
 
-/* line 794, ../sass/acquia-prosper-style.scss */
 #product-details.field-group-empty #price-group {
   float: none;
   width: 100%;
 }
 
 /* Ubercart - cart */
-/* line 801, ../sass/acquia-prosper-style.scss */
 .block-uc_cart table tr.even td,
 .block-uc_cart table tr.odd td {
   border: none;
 }
 
-/* line 805, ../sass/acquia-prosper-style.scss */
 #cart-form-products table {
   margin: 20px;
   width: auto;
 }
 
-/* line 810, ../sass/acquia-prosper-style.scss */
 #cart-form-products table th {
   font-weight: normal;
 }
 
-/* line 814, ../sass/acquia-prosper-style.scss */
 #cart-form-products table td {
   border: none;
   padding: 10px;
 }
 
-/* line 819, ../sass/acquia-prosper-style.scss */
 #cart-form-products table td.image img {
   padding: 0;
 }
 
-/* line 823, ../sass/acquia-prosper-style.scss */
 #cart-form-products table td.desc .item-list ul.product-description {
   margin: 0 0 0 20px;
 }
 
-/* line 827, ../sass/acquia-prosper-style.scss */
 #cart-form-products table td.subtotal strong {
   font-weight: normal;
   margin-right: 20px;
 }
 
-/* line 832, ../sass/acquia-prosper-style.scss */
 #cart-form-products table td.subtotal .uc-price {
   font-weight: bold;
 }
 
 /* Ubercart - cart quotes */
-/* line 837, ../sass/acquia-prosper-style.scss */
 #uc-cart-pane-quotes .solid-border {
   margin: 20px 0;
   padding: 20px;
@@ -998,25 +842,21 @@ ul.uc-categories a:visited {
   -webkit-border-radius: 4px;
 }
 
-/* line 845, ../sass/acquia-prosper-style.scss */
 #uc-cart-pane-quotes .form-item label {
   float: left;
   margin: 0 10px 0 0;
 }
 
 /* Ubercart - checkout */
-/* line 851, ../sass/acquia-prosper-style.scss */
 #uc-cart-checkout-form {
   padding: 20px;
 }
 
-/* line 855, ../sass/acquia-prosper-style.scss */
 #uc-cart-checkout-form fieldset legend {
   line-height: 25px;
   padding: 0;
 }
 
-/* line 861, ../sass/acquia-prosper-style.scss */
 #uc-cart-checkout-form fieldset legend a:link,
 #uc-cart-checkout-form fieldset legend a:visited {
   height: 25px;
@@ -1025,86 +865,71 @@ ul.uc-categories a:visited {
   padding: 0 0 0 15px;
 }
 
-/* line 868, ../sass/acquia-prosper-style.scss */
 #uc-cart-checkout-form table td.subtotal .uc-price {
   font-weight: bold;
 }
 
-/* line 872, ../sass/acquia-prosper-style.scss */
 #uc-cart-checkout-form .item-list .product-description {
   margin: 0 0 0 20px;
 }
 
-/* line 876, ../sass/acquia-prosper-style.scss */
 #uc-cart-checkout-form .address-pane-table .field-label {
   font-weight: normal;
   padding-right: 20px;
 }
 
-/* line 881, ../sass/acquia-prosper-style.scss */
 #uc-cart-checkout-form .address-pane-table .form-required {
   float: right;
   font-weight: bold;
   padding: 0 0 0 3px;
 }
 
-/* line 887, ../sass/acquia-prosper-style.scss */
 #uc-cart-checkout-form .uc-price {
   font-weight: bold;
 }
 
 /* Ubercart - review order */
-/* line 892, ../sass/acquia-prosper-style.scss */
 .order-review-table {
   border: none;
   width: 100%;
 }
 
-/* line 897, ../sass/acquia-prosper-style.scss */
 .order-review-table .pane-title-row {
   text-align: left;
 }
 
-/* line 901, ../sass/acquia-prosper-style.scss */
 .order-review-table .pane-title-row td {
   border: none;
   padding: 5px 15px;
 }
 
-/* line 906, ../sass/acquia-prosper-style.scss */
 .order-review-table .title-col {
   padding: 15px;
   text-align: left;
   width: 100px;
 }
 
-/* line 912, ../sass/acquia-prosper-style.scss */
 .order-review-table .data-col {
   padding: 15px;
 }
 
-/* line 916, ../sass/acquia-prosper-style.scss */
 .order-review-table .review-button-row {
   border: none;
 }
 
-/* line 920, ../sass/acquia-prosper-style.scss */
 .order-review-table .review-button-row td {
   padding: 5px 3px 5px 0;
 }
 
 /* Ubercart buttons - action */
-/* line 927, ../sass/acquia-prosper-style.scss */
 #edit-checkout.form-submit,
 #edit-continue.form-submit,
 table.order-review-table #edit-submit.form-submit {
-  font-size: 116.7%;
-  /* 14px/12px */
+  font-size: 116.7%; /* 14px/12px */
   padding: 8px 16px;
 }
 
 /* Ubercart buttons - secondary */
-/* line 935, ../sass/acquia-prosper-style.scss */
 #edit-update.form-submit,
 #edit-cancel.form-submit,
 #edit-back.form-submit {
@@ -1112,7 +937,6 @@ table.order-review-table #edit-submit.form-submit {
   font-weight: normal;
 }
 
-/* line 948, ../sass/acquia-prosper-style.scss */
 #edit-update.form-submit:hover,
 #edit-update.form-submit.hover,
 #edit-update.form-submit:focus,
@@ -1125,9 +949,9 @@ table.order-review-table #edit-submit.form-submit {
   text-decoration: underline;
 }
 
+
 /* Tab Menus
 /-------------------------------------------------------------- */
-/* line 955, ../sass/acquia-prosper-style.scss */
 #content-tabs {
   background-color: transparent;
   float: none;
@@ -1136,7 +960,6 @@ table.order-review-table #edit-submit.form-submit {
 }
 
 /* Primary */
-/* line 963, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.primary {
   clear: both;
   float: left;
@@ -1144,14 +967,12 @@ table.order-review-table #edit-submit.form-submit {
   padding: 0 10px;
 }
 
-/* line 970, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.primary {
   margin: 0 0 20px 0;
   padding: 0;
   width: 100%;
 }
 
-/* line 976, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.primary li {
   border-style: none;
   display: inline;
@@ -1161,7 +982,6 @@ table.order-review-table #edit-submit.form-submit {
   padding: 0;
 }
 
-/* line 986, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.primary li a:link,
 #content-tabs ul.primary li a:visited {
   background-color: transparent;
@@ -1174,7 +994,6 @@ table.order-review-table #edit-submit.form-submit {
   white-space: nowrap;
 }
 
-/* line 998, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.primary li a:link,
 #content-tabs ul.primary li a:visited {
   border: none;
@@ -1182,25 +1001,22 @@ table.order-review-table #edit-submit.form-submit {
   padding: 5px 10px;
 }
 
-/* line 1008, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.primary li.active a,
 #content-tabs ul.primary li a.active:link,
 #content-tabs ul.primary li a.active:visited,
 #content-tabs ul.primary li.active a:hover,
-#content-tabs ul.primary li.active a:focus {
+#content-tabs ul.primary li.active a:focus  {
   border: none;
   padding: 5px 10px;
 }
 
-/* line 1014, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.primary li a:hover,
-#content-tabs ul.primary li a:focus {
+#content-tabs ul.primary li a:focus  {
   border-bottom: none;
   text-decoration: underline;
 }
 
 /* Secondary */
-/* line 1020, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.secondary {
   clear: both;
   float: left;
@@ -1210,7 +1026,6 @@ table.order-review-table #edit-submit.form-submit {
   width: 100%;
 }
 
-/* line 1029, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.secondary li {
   border-style: none;
   display: inline;
@@ -1220,35 +1035,32 @@ table.order-review-table #edit-submit.form-submit {
   padding: 0;
 }
 
-/* line 1039, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.secondary li a:link,
 #content-tabs ul.secondary li a:visited {
   background-color: transparent;
   border: none;
   float: left;
-  font-weight: normal;
+  font-weight:  normal;
   margin: 0 20px 0px 0;
   padding: 0 0 6px 0;
   text-decoration: none;
   white-space: nowrap;
 }
 
-/* line 1051, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.secondary li a:hover,
 #content-tabs ul.secondary li a:focus {
   padding: 0 0 2px 0;
 }
 
-/* line 1056, ../sass/acquia-prosper-style.scss */
 #content-tabs ul.secondary li a.active:link,
 #content-tabs ul.secondary li a.active:visited {
   padding: 0 0 2px 0;
 }
 
+
 /* Skinr styles
 /-------------------------------------------------------------- */
 /* Rounded Titles */
-/* line 1064, ../sass/acquia-prosper-style.scss */
 .prosper-rounded-title h2.block-title {
   font-weight: normal;
   margin: 0;
@@ -1256,34 +1068,28 @@ table.order-review-table #edit-submit.form-submit {
 }
 
 /* Gray Rounded - Plain */
-/* line 1071, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-plain h2.block-title {
   padding: 10px;
 }
 
-/* line 1075, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-plain .content {
   padding: 10px;
 }
 
 /* Gray Rounded - Style */
-/* line 1080, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-style h2.block-title {
   padding: 10px;
 }
 
-/* line 1084, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-style .content {
   padding: 10px;
 }
 
-/* line 1088, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-style ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 1093, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-style ul li {
   display: block;
   list-style: none;
@@ -1292,41 +1098,34 @@ table.order-review-table #edit-submit.form-submit {
   padding: 5px 5px 5px 25px;
 }
 
-/* line 1101, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-style ul li.active-trail a.active {
   text-decoration: underline;
 }
 
-/* line 1105, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-style ul li ul {
-  margin: 5px -5px -6px -25px;
+  margin: 5px -5px -6px -25px ;
   padding: 0 10px;
 }
 
-/* line 1110, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-style ul li ul li {
   border-bottom: none;
 }
 
-/* line 1114, ../sass/acquia-prosper-style.scss */
 .prosper-gray-rounded-style ul li ul li ul {
   border-bottom: none;
   border-top: none;
 }
 
 /* Gray border - dark background */
-/* line 1120, ../sass/acquia-prosper-style.scss */
 .prosper-grayborder-darkbackground .inner {
   padding: 20px;
 }
 
-/* line 1124, ../sass/acquia-prosper-style.scss */
 .prosper-grayborder-darkbackground ul {
   margin: 0 -10px;
   padding: 0;
 }
 
-/* line 1129, ../sass/acquia-prosper-style.scss */
 .prosper-grayborder-darkbackground ul li {
   display: block;
   list-style: none;
@@ -1335,42 +1134,35 @@ table.order-review-table #edit-submit.form-submit {
   padding: 5px 5px 5px 25px;
 }
 
-/* line 1138, ../sass/acquia-prosper-style.scss */
 .prosper-grayborder-darkbackground ul li a:hover,
 .prosper-grayborder-darkbackground ul li.active-trail a.active {
   text-decoration: none;
 }
 
-/* line 1142, ../sass/acquia-prosper-style.scss */
 .prosper-grayborder-darkbackground ul li.active-trail a.active {
   text-decoration: underline;
 }
 
-/* line 1146, ../sass/acquia-prosper-style.scss */
 .prosper-grayborder-darkbackground ul li ul {
-  margin: 5px -5px -6px -25px;
+  margin: 5px -5px -6px -25px ;
   padding: 0 10px;
 }
 
-/* line 1151, ../sass/acquia-prosper-style.scss */
 .prosper-grayborder-darkbackground ul li ul li {
   border-bottom: none;
 }
 
-/* line 1155, ../sass/acquia-prosper-style.scss */
 .prosper-grayborder-darkbackground ul li ul li ul {
   border-bottom: none;
   border-top: none;
 }
 
 /* Medium gray background - bottom border */
-/* line 1161, ../sass/acquia-prosper-style.scss */
 .prosper-mediumgraybackground-bottomborder .inner {
   padding: 20px;
 }
 
 /* Light gray background - border */
-/* line 1166, ../sass/acquia-prosper-style.scss */
 .prosper-lightgraybackground-border .inner {
   padding: 20px;
   border-radius: 4px;
@@ -1379,34 +1171,28 @@ table.order-review-table #edit-submit.form-submit {
 }
 
 /* Gradient & border */
-/* line 1174, ../sass/acquia-prosper-style.scss */
 .prosper-gradient-border .inner {
   padding: 2em;
 }
 
 /* Menu list */
-/* line 1179, ../sass/acquia-prosper-style.scss */
 .prosper-menu-list h2.block-title {
   font-weight: normal;
   margin: 0;
   padding: 0 10px;
 }
 
-/* line 1185, ../sass/acquia-prosper-style.scss */
 .prosper-menu-list ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 1190, ../sass/acquia-prosper-style.scss */
 .prosper-menu-list ul li {
-  line-height: 250%;
-  /* 30px/12px */
+  line-height: 250%; /* 30px/12px */
   list-style: none;
   list-style-image: none;
 }
 
-/* line 1198, ../sass/acquia-prosper-style.scss */
 .inner .prosper-menu-list ul li a:link,
 .inner .prosper-menu-list ul li a:visited,
 .inner .prosper-menu-list ul li .nolink {
@@ -1414,20 +1200,17 @@ table.order-review-table #edit-submit.form-submit {
   padding: 0 10px 0 20px;
 }
 
-/* line 1203, ../sass/acquia-prosper-style.scss */
 .prosper-menu-list ul li ul {
   margin: 0;
   padding: 5px 0 5px 5px;
 }
 
-/* line 1208, ../sass/acquia-prosper-style.scss */
 .prosper-menu-list ul li ul li {
   background: transparent none;
   line-height: 100%;
   padding: 5px 0;
 }
 
-/* line 1222, ../sass/acquia-prosper-style.scss */
 .inner .prosper-menu-list ul li ul li a:link,
 .inner .prosper-menu-list ul li ul li a:visited,
 .inner .prosper-menu-list ul li.collapsed ul li a:link,
@@ -1441,12 +1224,10 @@ table.order-review-table #edit-submit.form-submit {
   padding: 0 10px 0 20px;
 }
 
-/* line 1227, ../sass/acquia-prosper-style.scss */
 .prosper-menu-list ul li ul li ul {
   margin: 5px 0 -10px 10px;
 }
 
-/* line 1239, ../sass/acquia-prosper-style.scss */
 .inner .prosper-menu-list ul li ul li ul li a:link,
 .inner .prosper-menu-list ul li ul li ul li a:visited,
 .inner .prosper-menu-list ul li ul li.collapsed ul li a:link,
@@ -1461,19 +1242,16 @@ table.order-review-table #edit-submit.form-submit {
 }
 
 /* Shopping cart - light */
-/* line 1245, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light h2.block-title {
   font-weight: normal;
   margin: 0;
   padding: 0 10px;
 }
 
-/* line 1251, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light .content {
   padding: 5px;
 }
 
-/* line 1256, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light .cart-block-icon-empty,
 .prosper-shoppingcart-light .cart-block-icon-full {
   display: block;
@@ -1484,29 +1262,24 @@ table.order-review-table #edit-submit.form-submit {
   width: 10px;
 }
 
-/* line 1265, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light table {
   margin: 5px 0;
 }
 
-/* line 1269, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light table td {
   border: none;
   padding: 0 5px 0 0;
 }
 
-/* line 1274, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light #cart-block-contents ul.product-description {
   margin: 0 0 0 20px;
 }
 
-/* line 1278, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light .cart-block-summary-links ul {
   float: right;
   margin: 10px 0 5px 0;
 }
 
-/* line 1283, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light .cart-block-summary-links ul li {
   border: none;
   display: block;
@@ -1515,7 +1288,6 @@ table.order-review-table #edit-submit.form-submit {
   padding: 0;
 }
 
-/* line 1294, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light .cart-block-summary-links ul li.cart-block-view-cart a:link,
 .prosper-shoppingcart-light .cart-block-summary-links ul li.cart-block-view-cart a:visited,
 .prosper-shoppingcart-light .cart-block-summary-links ul li.cart-block-checkout a:link,
@@ -1526,14 +1298,12 @@ table.order-review-table #edit-submit.form-submit {
   text-decoration: none;
 }
 
-/* line 1302, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-light .cart-block-summary-links ul li.cart-block-checkout a:link,
 .prosper-shoppingcart-light .cart-block-summary-links ul li.cart-block-checkout a:visited {
   font-weight: bold;
 }
 
 /* Shopping cart - dark */
-/* line 1307, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-dark .inner {
   padding: 8px 5px 5px 5px;
   border-radius: 4px;
@@ -1541,7 +1311,6 @@ table.order-review-table #edit-submit.form-submit {
   -webkit-border-radius: 4px;
 }
 
-/* line 1315, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-dark .cart-block-icon-empty,
 .prosper-shoppingcart-dark .cart-block-icon-full {
   display: block;
@@ -1552,29 +1321,24 @@ table.order-review-table #edit-submit.form-submit {
   width: 10px;
 }
 
-/* line 1324, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-dark table {
   margin: 0;
 }
 
-/* line 1328, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-dark table td {
   border: none;
   padding: 0;
 }
 
-/* line 1333, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-dark #cart-block-contents ul.product-description {
   margin: 0 0 0 20px;
 }
 
-/* line 1337, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-dark .cart-block-summary-links ul {
   float: right;
   margin: 10px 0 5px 0;
 }
 
-/* line 1342, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-dark .cart-block-summary-links ul li {
   border: none;
   display: block;
@@ -1583,7 +1347,6 @@ table.order-review-table #edit-submit.form-submit {
   padding: 0;
 }
 
-/* line 1353, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-dark .cart-block-summary-links ul li.cart-block-view-cart a:link,
 .prosper-shoppingcart-dark .cart-block-summary-links ul li.cart-block-view-cart a:visited,
 .prosper-shoppingcart-dark .cart-block-summary-links ul li.cart-block-checkout a:link,
@@ -1594,25 +1357,21 @@ table.order-review-table #edit-submit.form-submit {
   text-decoration: none;
 }
 
-/* line 1361, ../sass/acquia-prosper-style.scss */
 .prosper-shoppingcart-dark .cart-block-summary-links ul li.cart-block-checkout a:link,
 .prosper-shoppingcart-dark .cart-block-summary-links ul li.cart-block-checkout a:visited {
   font-weight: bold;
 }
 
 /* Prosper quicktabs */
-/* line 1366, ../sass/acquia-prosper-style.scss */
 .prosper-quicktabs .quicktabs_wrapper {
   margin: 10px 0;
 }
 
-/* line 1370, ../sass/acquia-prosper-style.scss */
 .prosper-quicktabs .quicktabs_wrapper ul.quicktabs_tabs {
   margin: 0;
   padding: 0 0 20px 0;
 }
 
-/* line 1375, ../sass/acquia-prosper-style.scss */
 .prosper-quicktabs .quicktabs_wrapper ul.quicktabs_tabs li {
   display: block;
   float: left;
@@ -1620,66 +1379,55 @@ table.order-review-table #edit-submit.form-submit {
   padding: 0;
 }
 
-/* line 1383, ../sass/acquia-prosper-style.scss */
 .prosper-quicktabs .quicktabs_wrapper ul.quicktabs_tabs li a:link,
 .prosper-quicktabs .quicktabs_wrapper ul.quicktabs_tabs li a:visited {
   padding: 8px 20px;
 }
 
-/* line 1388, ../sass/acquia-prosper-style.scss */
 .prosper-quicktabs .quicktabs_wrapper ul.quicktabs_tabs li.active a:link,
 .prosper-quicktabs .quicktabs_wrapper ul.quicktabs_tabs li.active a:visited {
   border-bottom: none;
 }
 
-/* line 1392, ../sass/acquia-prosper-style.scss */
 .prosper-quicktabs .quicktabs_main {
   margin: 4px 0;
   padding: 20px;
 }
 
 /* Prosper comments - edgy */
-/* line 1398, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy div.comment {
   border: none;
   margin: 0 0 20px 0;
   padding: 0;
 }
 
-/* line 1405, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy #comments .comment-wrapper div.odd,
 .prosper-comments-edgy #comments .comment-wrapper div.even {
   background: none;
 }
 
-/* line 1409, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy #comments .comment-wrapper div.comment-by-author .submitted {
   padding: 0 10px;
 }
 
-/* line 1413, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .withpicture .withpicture-column-left {
   float: left;
   width: 25%;
 }
 
-/* line 1418, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .withpicture .withpicture-column-right {
   float: right;
   width: 75%;
 }
 
-/* line 1423, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .content-inner {
   padding: 20px;
 }
 
-/* line 1427, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .odd .content-inner {
   margin-left: 10px;
 }
 
-/* line 1431, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .odd .comment-top-left {
   display: block;
   float: left;
@@ -1687,12 +1435,10 @@ table.order-review-table #edit-submit.form-submit {
   width: 10px;
 }
 
-/* line 1438, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .even .content-inner {
   margin-left: 10px;
 }
 
-/* line 1442, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .even .comment-top-left {
   display: block;
   float: left;
@@ -1700,24 +1446,20 @@ table.order-review-table #edit-submit.form-submit {
   width: 10px;
 }
 
-/* line 1449, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .signature {
   margin: 0 0 10px 0;
   padding: 5px 10px;
 }
 
-/* line 1454, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .signature p {
   margin: 0;
 }
 
-/* line 1458, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .links {
   margin: 0 -20px;
   padding: 5px;
 }
 
-/* line 1463, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .comment-wrapper .links ul.links {
   border: none;
   float: right;
@@ -1727,36 +1469,30 @@ table.order-review-table #edit-submit.form-submit {
   width: 100%;
 }
 
-/* line 1472, ../sass/acquia-prosper-style.scss */
 .prosper-comments-edgy .box .content {
   padding: 20px;
 }
 
 /* Prosper comments - clean */
-/* line 1477, ../sass/acquia-prosper-style.scss */
 .prosper-comments-clean div.comment {
   margin: 0 0 15px 0;
 }
 
-/* line 1481, ../sass/acquia-prosper-style.scss */
 .prosper-comments-clean .comment-wrapper .withpicture .withpicture-column-left {
   float: left;
   width: 25%;
 }
 
-/* line 1486, ../sass/acquia-prosper-style.scss */
 .prosper-comments-clean .comment-wrapper .withpicture .withpicture-column-right {
   float: right;
   padding: 0 0 10px 0;
   width: 75%;
 }
 
-/* line 1492, ../sass/acquia-prosper-style.scss */
 .prosper-comments-clean .comment-wrapper .odd .content {
   border-top: none;
 }
 
-/* line 1496, ../sass/acquia-prosper-style.scss */
 .prosper-comments-clean .comment-wrapper .links ul.links {
   border: none;
   float: right;
@@ -1767,35 +1503,29 @@ table.order-review-table #edit-submit.form-submit {
 }
 
 /* Footer - single column list */
-/* line 1506, ../sass/acquia-prosper-style.scss */
 .footer .fusion-inline-menu {
   margin-top: -20px;
 }
 
-/* line 1510, ../sass/acquia-prosper-style.scss */
 .footer .fusion-inline-menu .inner ul li.last {
   border-right-style: solid;
   border-right-width: 1px;
 }
 
-/* line 1515, ../sass/acquia-prosper-style.scss */
 .footer .fusion-inline-menu .inner ul li.first {
   border-left-style: solid;
   border-left-width: 1px;
 }
 
-/* line 1520, ../sass/acquia-prosper-style.scss */
 .footer .fusion-inline-menu h2.block-title {
   display: none;
 }
 
-/* line 1524, ../sass/acquia-prosper-style.scss */
 .footer .fusion-inline-menu ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 1529, ../sass/acquia-prosper-style.scss */
 .footer .fusion-inline-menu ul li {
   border-right: none;
   display: block;
@@ -1805,43 +1535,36 @@ table.order-review-table #edit-submit.form-submit {
   padding: 0;
 }
 
-/* line 1538, ../sass/acquia-prosper-style.scss */
 .footer .fusion-inline-menu ul li.expanded ul {
   display: none;
 }
 
-/* line 1543, ../sass/acquia-prosper-style.scss */
 .footer .fusion-inline-menu .inner ul li a:link,
 .footer .fusion-inline-menu .inner ul li a:visited {
   display: block;
   padding: 10px;
 }
 
-/* line 1548, ../sass/acquia-prosper-style.scss */
 .footer .fusion-inline-menu .inner ul li a:hover {
   text-decoration: none;
 }
 
 /* Footer - multi-column list */
-/* line 1553, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu {
   margin: -20px 0 0 0;
 }
 
-/* line 1557, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu h2.block-title {
   display: none;
 }
 
-/* line 1563, ../sass/acquia-prosper-style.scss */
 .fusion-multicol-menu .inner ul li,
-.fusion-multicol-menu .inner ul li.expanded,
+.fusion-multicol-menu .inner ul li.expanded, 
 .fusion-multicol-menu .inner ul li.leaf {
   font-weight: normal;
   margin-left: 0;
 }
 
-/* line 1573, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu .inner ul li a:link,
 .footer .fusion-multicol-menu .inner ul li a:visited,
 .footer .fusion-multicol-menu .inner ul li.leaf a:link,
@@ -1853,60 +1576,50 @@ table.order-review-table #edit-submit.form-submit {
   padding: 10px 50px 10px 10px;
 }
 
-/* line 1580, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu .inner ul li ul li a:link,
 .footer .fusion-multicol-menu .inner ul li ul li a:visited {
   font-weight: normal;
 }
 
-/* line 1584, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu .inner ul li a:hover {
   text-decoration: none;
 }
 
-/* line 1588, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu ul li.expanded ul li {
   border: none;
   display: block;
   text-align: left;
 }
 
-/* line 1594, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu .inner ul li ul {
   margin-left: 10px;
   margin-top: 5px;
 }
 
-/* line 1600, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu .inner ul li ul li a:link,
 .footer .fusion-multicol-menu .inner ul li ul li a:visited {
   padding: 0 0 5px 0;
 }
 
-/* line 1604, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu .inner ul li ul li a:hover {
   background: none;
   text-decoration: underline;
 }
 
-/* line 1610, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu .inner ul li.active-trail ul li a:link,
 .footer .fusion-multicol-menu .inner ul li.active-trail ul li a:visited {
   background: none;
 }
 
-/* line 1614, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu .inner ul li.active-trail ul li a.active {
-  background: none;
+  background:  none;
 }
 
-/* line 1618, ../sass/acquia-prosper-style.scss */
 .footer .fusion-multicol-menu .inner ul li ul li ul {
   margin-top: 0;
 }
 
 /* Callout */
-/* line 1623, ../sass/acquia-prosper-style.scss */
 .fusion-callout .inner {
   line-height: 1.4em;
 }

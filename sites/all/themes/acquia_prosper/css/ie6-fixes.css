@@ -1,5 +1,4 @@
 /* $Id: ie6-fixes.css,v 1.6 2010/09/17 21:36:06 eternalistic Exp $ */
-
 /* IE6 fixes
 -------------------------------------------------------------- */
 /* Lists */
@@ -16,8 +15,8 @@ ul li ul li ul li {
   list-style-image: url(../images/list-level-3_ie.png);
 }
 */
-
 /* Clearfixes */
+/* line 24, ../sass/ie6-fixes.scss */
 ul.links.inline.uc-categories,
 ul.pager,
 .prosper-quicktabs .quicktabs_main,
@@ -27,31 +26,37 @@ ul.pager,
 }
 
 /* Primary menu */
+/* line 30, ../sass/ie6-fixes.scss */
 #primary-menu ul.sf-menu li ul.menu {
   margin-top: 7px;
 }
 
+/* line 34, ../sass/ie6-fixes.scss */
 #primary-menu ul.sf-menu li ul.menu li ul.menu {
   margin-top: 12px;
 }
 
 /* Skinr styles */
+/* line 39, ../sass/ie6-fixes.scss */
 .prosper-grayborder-darkbackground ul li {
   position: relative;
 }
 
 /* Prevent collapsing pager container */
+/* line 44, ../sass/ie6-fixes.scss */
 ul.pager {
   height: 1%;
   position: relative;
   z-index: 10;
 }
 
+/* line 50, ../sass/ie6-fixes.scss */
 ul.pager li {
   line-height: 200%;
   margin-top: -3px;
 }
 
+/* line 58, ../sass/ie6-fixes.scss */
 ul.pager li.pager-first a,
 ul.pager li.pager-previous a,
 ul.pager li.pager-next a,
@@ -60,19 +65,22 @@ ul.pager li.pager-last a {
   margin: 0;
 }
 
+/* line 66, ../sass/ie6-fixes.scss */
 ul.pager li.pager-first a:hover,
 ul.pager li.pager-previous a:hover,
 ul.pager li.pager-next a:hover,
-ul.pager li.pager-last a:hover{
+ul.pager li.pager-last a:hover {
   border: none;
 }
 
+/* line 70, ../sass/ie6-fixes.scss */
 ul.pager li.pager-current {
   height: 21px;
   position: relative;
   z-index: 10;
 }
 
+/* line 77, ../sass/ie6-fixes.scss */
 ul.pager li.pager-item a:link,
 ul.pager li.pager-item a:visited {
   display: block;
@@ -81,54 +89,64 @@ ul.pager li.pager-item a:visited {
 }
 
 /* Give height to header-top when only search is enabled */
+/* line 84, ../sass/ie6-fixes.scss */
 #header-top.header-top-search {
   height: 32px;
 }
 
 /* move the search box up into header-top area */
+/* line 89, ../sass/ie6-fixes.scss */
 .search-box-inner form#search-theme-form {
   top: -25px;
 }
 
 /* prevent search button from covering text input area */
+/* line 94, ../sass/ie6-fixes.scss */
 .search-box-inner #search-button {
   width: 1%;
 }
 
 /* Menu list */
+/* line 99, ../sass/ie6-fixes.scss */
 .prosper-menu-list ul li {
   height: 30px;
 }
 
+/* line 103, ../sass/ie6-fixes.scss */
 .prosper-menu-list ul li ul {
   margin-bottom: -20px;
 }
 
 /* Ubercart */
 /* fix product page layout */
+/* line 109, ../sass/ie6-fixes.scss */
 .product-group .content {
   float: left;
   clear: right;
 }
 
 /* prevent elements from disappearing */
+/* line 116, ../sass/ie6-fixes.scss */
 .product-group .content #product-details,
 .block-uc_cart h2.block-title span {
   zoom: 1;
 }
 
 /* prevent overlapping AJAX fieldsets */
+/* line 121, ../sass/ie6-fixes.scss */
 #uc-cart-checkout-form fieldset.collapsible {
   position: static;
 }
 
 /* improve appearance of fieldset legends */
+/* line 126, ../sass/ie6-fixes.scss */
 #uc-cart-checkout-form fieldset legend {
   margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
+/* line 132, ../sass/ie6-fixes.scss */
 #uc-cart-checkout-form fieldset legend a {
   float: left;
 }
