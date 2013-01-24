@@ -1,5 +1,22 @@
 @import 'compass';
 @import "sassy-buttons";
 
-$blue : #3a64e9;
+$blue : #0669e4;
 $green: #b4ff19;
+$darkGrey: #000;
+
+$menuWidth: 240px;
+
+@mixin pageTitle 	{	font-size: 26px;
+						font-weight: bold;
+						color: $darkGrey;
+					}
+					
+@mixin menuHeader	{	background: #333;
+						color: #fff;
+						font-size: 12px;
+						font-weight: normal;
+						text-transform: uppercase;
+						padding: .4em 0 .2em 1em;
+						max-width: $menuWidth;
+					}					

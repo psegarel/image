@@ -1,5 +1,5 @@
 AddDefaultCharset utf-8
-<FilesMatch "\.((html)|((html)\.gz))$">
+<FilesMatch "\.((html))$">
   <IfModule mod_expires.c>
     ExpiresDefault A1
   </IfModule>
@@ -12,15 +12,14 @@ AddDefaultCharset utf-8
   AddCharset utf-8 .html
   AddCharset utf-8 .css
   AddCharset utf-8 .js
-  AddEncoding gzip .gz
 </IfModule>
-<FilesMatch "\.(html|html\.gz)$">
+<FilesMatch "\.(html)$">
   ForceType text/html
 </FilesMatch>
-<FilesMatch "\.(js|js\.gz)$">
+<FilesMatch "\.(js)$">
   ForceType text/javascript
 </FilesMatch>
-<FilesMatch "\.(css|css\.gz)$">
+<FilesMatch "\.(css)$">
   ForceType text/css
 </FilesMatch>
 

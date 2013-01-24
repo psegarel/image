@@ -31,6 +31,8 @@ regions[postscript_bottom] = postscript bottom
 regions[footer] = footer
 regions[node_top] = node top
 regions[node_bottom] = node bottom
+regions[right] = right
+regions[left] = left
 
 features[] = logo
 features[] = name
