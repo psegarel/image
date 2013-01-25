@@ -50,7 +50,12 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   line-height: 1.3;
 }
 
-/* line 51, ../sass/local.scss */
+/* line 52, ../sass/local.scss */
+#header-group-inner {
+  padding-top: 40px;
+}
+
+/* line 55, ../sass/local.scss */
 #main-wrapper .panels-flexible-region-last h2.block-title {
   background: #333;
   color: #fff;
@@ -61,7 +66,7 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   max-width: 240px;
 }
 
-/* line 58, ../sass/local.scss */
+/* line 62, ../sass/local.scss */
 .page-taxonomy .pane-products-views h2.block-title {
   color: black;
   border-bottom: 1px dotted black;
@@ -69,36 +74,36 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   font-size: 20px;
   margin-bottom: 60px;
 }
-/* line 66, ../sass/local.scss */
+/* line 70, ../sass/local.scss */
 .page-taxonomy .panels-flexible-region-inside-last .pane-products-categories {
   margin-top: 20px;
 }
 
-/* line 72, ../sass/local.scss */
+/* line 76, ../sass/local.scss */
 .node-type-product h1 {
   font-size: 26px;
   font-weight: bold;
   color: black;
   margin-top: 40px;
 }
-/* line 76, ../sass/local.scss */
+/* line 80, ../sass/local.scss */
 .node-type-product h2.acids-table-name {
   font-size: 14px;
   font-family: "Arial Narrow", sans-serif;
 }
-/* line 80, ../sass/local.scss */
+/* line 84, ../sass/local.scss */
 .node-type-product #other-products {
   border-top: 1px dotted black;
   border-bottom: 1px dotted black;
   padding: 6px 0;
   margin-bottom: 40px;
 }
-/* line 85, ../sass/local.scss */
+/* line 89, ../sass/local.scss */
 .node-type-product #other-products h2.block-title {
   background: none;
   color: black;
 }
-/* line 94, ../sass/local.scss */
+/* line 98, ../sass/local.scss */
 .node-type-product #content-content .panels-flexible-region-last .pane-field-notes h2.block-title,
 .node-type-product #content-content .panels-flexible-region-last .pane-field-notes h2.pane-title,
 .node-type-product #content-content .panels-flexible-region-last .pane-field-tasting-notes h2.block-title,
@@ -113,13 +118,13 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   text-transform: none;
 }
 
-/* line 108, ../sass/local.scss */
+/* line 112, ../sass/local.scss */
 .node-type-news #main-content h1 {
   font-size: 26px;
   font-weight: bold;
   color: black;
 }
-/* line 111, ../sass/local.scss */
+/* line 115, ../sass/local.scss */
 .node-type-news #main-content .field-field-teaser {
   font-family: Times, serif;
   font-style: italic;
@@ -129,61 +134,61 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   font-size: 20px;
   line-height: 1.2;
 }
-/* line 121, ../sass/local.scss */
+/* line 125, ../sass/local.scss */
 .node-type-news .views-field-body p {
   width: 92%;
   font-size: 16px;
 }
 
-/* line 127, ../sass/local.scss */
+/* line 131, ../sass/local.scss */
 #pid-news .panels-flexible-region-last .pane-news {
   margin-top: 60px;
 }
-/* line 131, ../sass/local.scss */
+/* line 135, ../sass/local.scss */
 #pid-news .news-page-title {
   margin: 20px 0;
 }
-/* line 132, ../sass/local.scss */
+/* line 136, ../sass/local.scss */
 #pid-news .news-page-title .field-content {
   font-size: 26px;
   font-weight: bold;
   color: black;
 }
 
-/* line 140, ../sass/local.scss */
+/* line 144, ../sass/local.scss */
 .views-field-body p {
   width: 92%;
   font-size: 16px;
 }
 
-/* line 145, ../sass/local.scss */
+/* line 149, ../sass/local.scss */
 #pid-about-us .about-us-content p {
   width: 92%;
   font-size: 16px;
 }
 
-/* line 152, ../sass/local.scss */
+/* line 156, ../sass/local.scss */
 .latest-news h2 {
   border-bottom: 1px dotted black;
   font-size: 18px;
 }
-/* line 156, ../sass/local.scss */
+/* line 160, ../sass/local.scss */
 .latest-news h3 {
   font-size: 18px;
 }
-/* line 159, ../sass/local.scss */
+/* line 163, ../sass/local.scss */
 .latest-news .views-view-grid tbody tr.row-1 {
   border-bottom: 60px solid transparent;
 }
 
-/* line 163, ../sass/local.scss */
+/* line 168, ../sass/local.scss */
 .catchphrase {
   color: #b4ff19;
   font-weight: bold;
   font-size: 26px;
 }
 
-/* line 168, ../sass/local.scss */
+/* line 174, ../sass/local.scss */
 .more {
   text-transform: uppercase;
   font-size: .8em;
@@ -196,7 +201,7 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   border: 2px solid #cccccc;
 }
 
-/* line 180, ../sass/local.scss */
+/* line 186, ../sass/local.scss */
 .footer-wrapper h2.block-title {
   color: #b4ff19;
   border-top: none;
@@ -204,17 +209,17 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   padding-bottom: .4em;
   font-size: 18px;
 }
-/* line 187, ../sass/local.scss */
+/* line 193, ../sass/local.scss */
 .footer-wrapper ul.nav {
   margin: 0;
   padding: 0;
 }
-/* line 189, ../sass/local.scss */
+/* line 195, ../sass/local.scss */
 .footer-wrapper ul.nav li {
   list-style: none;
   margin-bottom: 4px;
 }
-/* line 191, ../sass/local.scss */
+/* line 197, ../sass/local.scss */
 .footer-wrapper ul.nav li a {
   color: #fff;
   font-size: 14px;
@@ -222,61 +227,61 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
 
 /* Layout 
 -------------------------------------------------------------- */
-/* line 201, ../sass/local.scss */
+/* line 207, ../sass/local.scss */
 .header-group-inner {
   padding: 0;
   margin-bottom: -7px;
 }
 
-/* line 206, ../sass/local.scss */
+/* line 212, ../sass/local.scss */
 .views-view-grid tbody tr td {
   vertical-align: top;
 }
-/* line 207, ../sass/local.scss */
+/* line 213, ../sass/local.scss */
 .views-view-grid tbody tr td h3 {
   font-weight: bold;
 }
-/* line 209, ../sass/local.scss */
+/* line 215, ../sass/local.scss */
 .views-view-grid tbody tr td h3, .views-view-grid tbody tr td p {
   max-width: 260px;
 }
 
 /* Products Page 
 -------------------------------------------------------------- */
-/* line 214, ../sass/local.scss */
+/* line 220, ../sass/local.scss */
 .pane-products-views .view-products-views .views-field-field-illustration-fid img {
   float: left;
   margin: 0 5px 1em 0;
 }
-/* line 218, ../sass/local.scss */
+/* line 224, ../sass/local.scss */
 .pane-products-views .view-products-views .views-field-title a {
   color: #444;
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 222, ../sass/local.scss */
+/* line 228, ../sass/local.scss */
 .pane-products-views .view-products-views .views-field-title a:hover {
   color: #0669e4;
 }
 
 /* Downloads page 
 -------------------------------------------------------------- */
-/* line 231, ../sass/local.scss */
+/* line 237, ../sass/local.scss */
 #pid-downloads #main-wrapper {
   padding: 6em 0 0 0;
 }
 
-/* line 234, ../sass/local.scss */
+/* line 240, ../sass/local.scss */
 #pid-downloads .views-field-title {
   font-weight: bold;
 }
 
-/* line 237, ../sass/local.scss */
+/* line 243, ../sass/local.scss */
 #pid-downloads table thead {
   display: none;
 }
 
-/* line 243, ../sass/local.scss */
+/* line 249, ../sass/local.scss */
 #pid-downloads table,
 #pid-downloads tbody tr td,
 #pid-downloads tbody tr,
@@ -285,28 +290,28 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   border-bottom: none;
 }
 
-/* line 247, ../sass/local.scss */
+/* line 253, ../sass/local.scss */
 #pid-downloads tbody tr {
   vertical-align: top;
 }
 
-/* line 250, ../sass/local.scss */
+/* line 256, ../sass/local.scss */
 #pid-downloads tbody tr td {
   border-bottom: 10px solid transparent;
 }
 
 /* Breadcrumb type Horizontal Menu
 /-------------------------------------------------------------- */
-/* line 256, ../sass/local.scss */
+/* line 262, ../sass/local.scss */
 .horizontal-menu ul.nav {
   padding: 0;
   margin: 0;
 }
-/* line 259, ../sass/local.scss */
+/* line 265, ../sass/local.scss */
 .horizontal-menu ul.nav li {
   list-style: none;
 }
-/* line 261, ../sass/local.scss */
+/* line 267, ../sass/local.scss */
 .horizontal-menu ul.nav li a {
   display: inline;
   float: left;
@@ -319,23 +324,23 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
 
 /* Sidebar Menu
 /-------------------------------------------------------------- */
-/* line 275, ../sass/local.scss */
+/* line 281, ../sass/local.scss */
 .menu h3 a {
   color: black;
   text-decoration: underline;
   font-weight: bold;
   font-size: 16px;
 }
-/* line 282, ../sass/local.scss */
+/* line 288, ../sass/local.scss */
 .menu ul.nav {
   margin: 0 0 20px 0;
   padding: 0;
 }
-/* line 285, ../sass/local.scss */
+/* line 291, ../sass/local.scss */
 .menu ul.nav li {
   list-style: none;
 }
-/* line 287, ../sass/local.scss */
+/* line 293, ../sass/local.scss */
 .menu ul.nav li a {
   text-decoration: none;
   background: #fff;
@@ -348,7 +353,7 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   color: #444;
   max-width: 240px;
 }
-/* line 299, ../sass/local.scss */
+/* line 305, ../sass/local.scss */
 .menu ul.nav li a:hover {
   background: #0669e4;
   color: #fff;
@@ -381,18 +386,18 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
 */
 /* Primary Menu
 /-------------------------------------------------------------- */
-/* line 335, ../sass/local.scss */
+/* line 341, ../sass/local.scss */
 .primary-menu-inner ul.menu li {
   padding: 0.1em 4em 0 0;
 }
 
-/* line 338, ../sass/local.scss */
+/* line 344, ../sass/local.scss */
 .primary-menu-inner ul.menu li a {
   text-transform: uppercase;
   font-size: .8em;
 }
 
-/* line 343, ../sass/local.scss */
+/* line 349, ../sass/local.scss */
 .primary-menu-inner ul.menu li a:link,
 .primary-menu-inner ul.menu li a:visited {
   border-left: none;
@@ -400,7 +405,7 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
 }
 
 /* styles for standard and Superfish primary menu */
-/* line 354, ../sass/local.scss */
+/* line 360, ../sass/local.scss */
 .primary-menu-inner ul.menu li a:focus,
 .primary-menu-inner ul.menu li a:hover,
 .primary-menu-inner ul.menu li:hover a,
@@ -412,12 +417,12 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   color: #fff;
 }
 
-/* line 358, ../sass/local.scss */
+/* line 364, ../sass/local.scss */
 .primary-menu-inner ul.menu li.active-trail a.active {
   color: #fff;
 }
 
-/* line 362, ../sass/local.scss */
+/* line 368, ../sass/local.scss */
 .primary-menu-inner ul li.last a,
 .primary-menu-inner ul.sf-menu li.last {
   border-right: none;
@@ -425,7 +430,7 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
 
 /* Language Switcher
 /-------------------------------------------------------------- */
-/* line 368, ../sass/local.scss */
+/* line 374, ../sass/local.scss */
 .language-switcher ul {
   float: right;
   padding: 0.4em 3em 0.2em 0;
@@ -434,7 +439,7 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   border: 1px solid #444444;
 }
 
-/* line 375, ../sass/local.scss */
+/* line 381, ../sass/local.scss */
 .language-switcher ul li {
   list-style: none;
   float: left;
@@ -443,12 +448,12 @@ html, .header-top-wrapper, .header-group-wrapper, .footer-wrapper,
   font-weight: bold;
 }
 
-/* line 382, ../sass/local.scss */
+/* line 388, ../sass/local.scss */
 .language-switcher ul li a {
   color: #fff;
 }
 
-/* line 385, ../sass/local.scss */
+/* line 391, ../sass/local.scss */
 .language-switcher ul li img {
   margin-right: .5em;
 }

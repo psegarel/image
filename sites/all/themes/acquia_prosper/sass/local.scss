@@ -48,6 +48,10 @@ html, .header-top-wrapper , .header-group-wrapper , .footer-wrapper,
 									line-height: 1.3;
 								}
 								
+
+#header-group-inner	{	padding-top: 40px;
+					}
+
 #main-wrapper	{	.panels-flexible-region-last	{	h2.block-title	{	@include menuHeader;
 																			
 																		}
@@ -160,9 +164,11 @@ html, .header-top-wrapper , .header-group-wrapper , .footer-wrapper,
 														}		
 				}
 
+
 .catchphrase		{	color: $green;
 						font-weight: bold;
 						font-size: 26px;
+						
 					}
 					
 .more	{	text-transform: uppercase;
